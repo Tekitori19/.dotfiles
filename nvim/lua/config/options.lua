@@ -1,3 +1,13 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
+
+-- Enabled Plugins: (3)
+--   ● editor.harpoon2  harpoon
+--   ● editor.telescope  dressing.nvim  nvim-lspconfig  telescope-fzf-native.nvim  telescope.nvim
+--   ● util.rest  kulala.nvim  nvim-treesitter
+--
+-- Enabled Languages: (3)
+--   ● lang.go  mason.nvim  mini.icons  neotest-golang  nvim-dap-go  nvim-lspconfig  nvim-treesitter  conform.nvim  neotest  none-ls.nvim  nvim-dap
+--   ● lang.tailwind  nvim-cmp  nvim-lspconfig  tailwindcss-colorizer-cmp.nvim
+--   ● lang.typescript  mason.nvim  mini.icons  nvim-lspconfig  nvim-dap
