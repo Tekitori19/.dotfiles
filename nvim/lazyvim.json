@@ -5,6 +5,7 @@
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.editor.mini-files",
     "lazyvim.plugins.extras.editor.outline",
+    "lazyvim.plugins.extras.lang.angular",
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.util.rest"

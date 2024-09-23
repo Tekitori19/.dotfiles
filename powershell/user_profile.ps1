@@ -4,26 +4,30 @@
 # Import-Module posh-git
 # oh-my-posh --init --shell pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/montys.omp.json | Invoke-Expression
 # oh-my-posh --init --shell pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json | Invoke-Expression
-oh-my-posh --init --shell pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config ~/AppData/Local/Programs/oh-my-posh/themes/tokyo.omp.json | Invoke-Expression
 
 
 # Import-Module -Name Terminal-Icons
 
 # PSReadLine
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
 # Get-PSReadLineKeyHandler
 # Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 # Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-# Set-PSReadLineKeyHandler -Key Tab -Function Complete
+Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
 # Fzf
 Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Env
 # $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 
 # Alias
-Set-Alias -Name vim -Value nvim
+Set-Alias -Name vi -Value nvim
+Set-Alias -Name nvi -Value neovide
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
@@ -45,4 +49,3 @@ function yy {
     }
     Remove-Item -Path $tmp
 }
-
