@@ -10,15 +10,15 @@ return {
         -- ui_contrast = "low",
         on_highlights = function(hl, palette)
           hl.NormalFloat = { fg = palette.fg, bg = palette.none }
-        end
+        end,
       })
     end,
   },
+  { "diegoulloao/neofusion.nvim", priority = 1000, config = true },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
-      -- colorscheme = "catppuccin",
+      colorscheme = "neofusion",
     },
-  }
+  },
 }
