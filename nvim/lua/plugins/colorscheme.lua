@@ -14,7 +14,14 @@ return {
       })
     end,
   },
-  { "diegoulloao/neofusion.nvim", priority = 1000, config = true },
+  {
+    "diegoulloao/neofusion.nvim",
+    priority = 1000,
+    config = true,
+    opts = {},
+  },
+  { "bakageddy/alduin.nvim", priority = 1000, config = true, opts = {} },
+  { "fcancelinha/nordern.nvim", branch = "master", priority = 1000 },
   {
     "LazyVim/LazyVim",
     opts = {

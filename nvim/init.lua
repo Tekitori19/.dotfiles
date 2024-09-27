@@ -1,6 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.api.nvim_set_option("clipboard", "unnamed")
+-- vim.api.nvim_set_option("clipboard", "unnamed")
 -- Check if 'pwsh' is executable and set the shell accordingly
 if vim.fn.executable("pwsh") == 1 then
   vim.o.shell = "pwsh"
@@ -43,7 +43,7 @@ if vim.g.neovide then
 
   vim.g.neovide_scroll_animation_length = 0
 
-  vim.g.neovide_transparency = 0.9
+  vim.g.neovide_transparency = 0.86
 
   vim.g.neovide_padding_top = 0
   vim.g.neovide_padding_left = 0
