@@ -23,6 +23,14 @@ return {
   { "bakageddy/alduin.nvim", priority = 1000, config = true, opts = {} },
   { "fcancelinha/nordern.nvim", branch = "master", priority = 1000 },
   {
+    "ellisonleao/gruvbox.nvim",
+    prioneofusionrity = 1000,
+    config = true,
+    opts = {
+      transparent_mode = false,
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "neofusion",

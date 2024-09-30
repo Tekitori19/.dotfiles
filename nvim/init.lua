@@ -1,5 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+vim.opt.scrolloff = 8
 -- vim.api.nvim_set_option("clipboard", "unnamed")
 -- Check if 'pwsh' is executable and set the shell accordingly
 if vim.fn.executable("pwsh") == 1 then

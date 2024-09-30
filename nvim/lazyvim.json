@@ -8,6 +8,7 @@
     "lazyvim.plugins.extras.lang.angular",
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.tailwind",
+    "lazyvim.plugins.extras.util.mini-hipatterns",
     "lazyvim.plugins.extras.util.rest"
   ],
   "news": {
