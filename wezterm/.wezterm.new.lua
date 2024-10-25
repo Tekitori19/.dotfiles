@@ -64,12 +64,18 @@ wezterm.on("toggle-colorscheme", function(window, pane)
 end)
 
 -- keymaps
+-- TODO: CTRL SHIFT C => để vào copy mod
+-- TODO: CTRL SHIFT X => để xoá tab hiện tại
+-- TODO: CTRL SHIFT Z => để vào pane hiện tai
+-- TODO: CTRL SHIFT dấu mũi tên => để di chuyển giữa các tab
 config.keys = {
-	{
-		key = "E",
-		mods = "CTRL|SHIFT|ALT",
-		action = wezterm.action.EmitEvent("toggle-colorscheme"),
-	},
+	-- move
+	{ key = "h", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Left") },
+	{ key = "j", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Down") },
+	{ key = "k", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Up") },
+	{ key = "l", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Right") },
+
+	-- tmux like
 	{
 		key = "h",
 		mods = "CTRL|ALT",
@@ -85,6 +91,27 @@ config.keys = {
 			direction = "Down",
 			size = { Percent = 50 },
 		}),
+	},
+	{
+		key = "z",
+		mods = "CTRL|ALT",
+		action = "TogglePaneZoomState",
+	},
+	{
+		key = "x",
+		mods = "CTRL|ALT",
+		action = act({ CloseCurrentPane = { confirm = true } }),
+	},
+
+	-- copy and paste
+	{ key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
+	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
+
+	-- other config
+	{
+		key = "E",
+		mods = "CTRL|SHIFT|ALT",
+		action = wezterm.action.EmitEvent("toggle-colorscheme"),
 	},
 	{
 		key = "U",
@@ -106,12 +133,7 @@ config.keys = {
 		mods = "CTRL|SHIFT",
 		action = act.AdjustPaneSize({ "Right", 5 }),
 	},
-	{ key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
-	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
-	{ key = "z", mods = "CTRL|ALT", action = "TogglePaneZoomState" },
-	{ key = "x", mods = "CTRL|ALT", action = act({ CloseCurrentPane = { confirm = true } }) },
 	{ key = "9", mods = "CTRL", action = act.PaneSelect },
-	{ key = "L", mods = "CTRL", action = act.ShowDebugOverlay },
 	{
 		key = "O",
 		mods = "CTRL|ALT",
