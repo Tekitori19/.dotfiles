@@ -10,8 +10,8 @@ local config = wezterm.config_builder()
 
 config.front_end = "OpenGL"
 config.max_fps = 144
-config.default_cursor_style = "BlinkingBlock"
-config.animation_fps = 1
+-- config.default_cursor_style = "BlinkingBlock"
+-- config.animation_fps = 1
 config.term = "xterm-256color" -- Set the terminal type
 
 -- config.font = wezterm.font("Iosevka Custom")
@@ -28,9 +28,10 @@ config.cell_width = 0.9
 -- config.font = wezterm.font("M+ 1m")
 -- config.font = wezterm.font("Hack Regular")
 -- config.cell_width = 0.9
+-- config.font_size = 18
 config.window_background_opacity = 0.9
 config.prefer_egl = true
-config.font_size = 15.0
+config.font_size = 13.0
 
 config.window_padding = {
 	left = 0,
@@ -40,7 +41,7 @@ config.window_padding = {
 }
 
 -- tabs
-config.hide_tab_bar_if_only_one_tab = true
+-- config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 
@@ -50,7 +51,6 @@ config.tab_bar_at_bottom = true
 -- }
 
 -- This is where you actually apply your config choices
---
 
 -- color scheme toggling
 wezterm.on("toggle-colorscheme", function(window, pane)
@@ -72,7 +72,7 @@ config.keys = {
 	},
 	{
 		key = "h",
-		mods = "CTRL|SHIFT|ALT",
+		mods = "CTRL|ALT",
 		action = wezterm.action.SplitPane({
 			direction = "Right",
 			size = { Percent = 50 },
@@ -80,7 +80,7 @@ config.keys = {
 	},
 	{
 		key = "v",
-		mods = "CTRL|SHIFT|ALT",
+		mods = "CTRL|ALT",
 		action = wezterm.action.SplitPane({
 			direction = "Down",
 			size = { Percent = 50 },
@@ -106,6 +106,10 @@ config.keys = {
 		mods = "CTRL|SHIFT",
 		action = act.AdjustPaneSize({ "Right", 5 }),
 	},
+	{ key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
+	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
+	{ key = "z", mods = "CTRL|ALT", action = "TogglePaneZoomState" },
+	{ key = "x", mods = "CTRL|ALT", action = act({ CloseCurrentPane = { confirm = true } }) },
 	{ key = "9", mods = "CTRL", action = act.PaneSelect },
 	{ key = "L", mods = "CTRL", action = act.ShowDebugOverlay },
 	{
@@ -126,59 +130,59 @@ config.keys = {
 
 -- For example, changing the color scheme:
 config.color_scheme = "Everforest Dark (Gogh)"
--- config.colors = {
--- 	-- background = '#3b224c',
--- 	-- background = "#181616", -- vague.nvim bg
--- 	-- background = "#080808", -- almost black
--- 	background = "#0c0b0f", -- dark purple
--- 	-- background = "#020202", -- dark purple
--- 	-- background = "#17151c", -- brighter purple
--- 	-- background = "#16141a",
--- 	-- background = "#0e0e12", -- bright washed lavendar
--- 	-- background = 'rgba(59, 34, 76, 100%)',
--- 	cursor_border = "#bea3c7",
--- 	-- cursor_fg = "#281733",
--- 	cursor_bg = "#bea3c7",
--- 	-- selection_fg = '#281733',
---
--- 	tab_bar = {
--- 		background = "#0c0b0f",
--- 		-- background = "rgba(0, 0, 0, 0%)",
--- 		active_tab = {
--- 			bg_color = "#0c0b0f",
--- 			fg_color = "#bea3c7",
--- 			intensity = "Normal",
--- 			underline = "None",
--- 			italic = false,
--- 			strikethrough = false,
--- 		},
--- 		inactive_tab = {
--- 			bg_color = "#0c0b0f",
--- 			fg_color = "#f8f2f5",
--- 			intensity = "Normal",
--- 			underline = "None",
--- 			italic = false,
--- 			strikethrough = false,
--- 		},
---
--- 		new_tab = {
--- 			-- bg_color = "rgba(59, 34, 76, 50%)",
--- 			bg_color = "#0c0b0f",
--- 			fg_color = "white",
--- 		},
--- 	},
--- }
---
-config.window_frame = {
-	font = wezterm.font({ family = "Iosevka Custom", weight = "Regular" }),
-	active_titlebar_bg = "#0c0b0f",
-	-- active_titlebar_bg = "#181616",
+config.colors = {
+	-- 	-- background = '#3b224c',
+	-- 	-- background = "#181616", -- vague.nvim bg
+	-- 	-- background = "#080808", -- almost black
+	-- 	background = "#0c0b0f", -- dark purple
+	-- 	-- background = "#020202", -- dark purple
+	-- 	-- background = "#17151c", -- brighter purple
+	-- 	-- background = "#16141a",
+	-- 	-- background = "#0e0e12", -- bright washed lavendar
+	-- 	-- background = 'rgba(59, 34, 76, 100%)',
+	-- 	cursor_border = "#bea3c7",
+	-- 	-- cursor_fg = "#281733",
+	-- 	cursor_bg = "#bea3c7",
+	-- 	-- selection_fg = '#281733',
+	--
+	-- tab_bar = {
+	-- 	background = "#0c0b0f",
+	-- 	-- background = "rgba(0, 0, 0, 0%)",
+	-- 	active_tab = {
+	-- 		bg_color = "#0c0b0f",
+	-- 		fg_color = "#bea3c7",
+	-- 		intensity = "Normal",
+	-- 		underline = "None",
+	-- 		italic = false,
+	-- 		strikethrough = false,
+	-- 	},
+	-- 	inactive_tab = {
+	-- 		bg_color = "#0c0b0f",
+	-- 		fg_color = "#f8f2f5",
+	-- 		intensity = "Normal",
+	-- 		underline = "None",
+	-- 		italic = false,
+	-- 		strikethrough = false,
+	-- 	},
+	--
+	-- 	new_tab = {
+	-- 		-- bg_color = "rgba(59, 34, 76, 50%)",
+	-- 		bg_color = "#0c0b0f",
+	-- 		fg_color = "white",
+	-- 	},
+	-- },
 }
 
-config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
+-- config.window_frame = {
+-- 	font = wezterm.font({ family = "Iosevka Custom", weight = "Regular" }),
+-- 	active_titlebar_bg = "#0c0b0f",
+-- 	-- active_titlebar_bg = "#181616",
+-- }
+
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 -- config.window_decorations = "NONE | RESIZE"
 config.default_prog = { "pwsh.exe", "-NoLogo" }
-config.initial_cols = 80
+-- config.initial_cols = 80
 config.window_background_image = "C:\\Users\\corcl\\Pictures\\wallhaven-l816dy_1600x900.png"
 config.window_background_image_hsb = {
 	brightness = 0.1,
@@ -194,6 +198,9 @@ config.window_background_image_hsb = {
 -- 	-- window:gui_window():maximize()
 -- 	-- window:gui_window():set_position(0, 0)
 -- end)
+
+local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+bar.apply_to_config(config)
 
 -- and finally, return the configuration to wezterm
 return config

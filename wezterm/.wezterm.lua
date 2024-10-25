@@ -20,6 +20,8 @@ config.window_padding = {
 	top = 5,
 	bottom = 0,
 }
+config.front_end = "OpenGL"
+config.max_fps = 144
 
 -- Tab bar
 config.use_fancy_tab_bar = false
@@ -33,43 +35,6 @@ config.window_frame = {
 	font_size = 11,
 }
 -- config.text_background_opacity = 0.6
-wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
-	-- The filled in variant of the < symbol
-	local SOLID_LEFT_ARROW = wezterm.nerdfonts.pl_right_hard_divider
-
-	-- The filled in variant of the > symbol
-	local SOLID_RIGHT_ARROW = wezterm.nerdfonts.pl_left_hard_divider
-	local title = tab.active_pane.title
-	if tab.tab_title and #tab.tab_title > 0 then
-		title = tab.tab_title
-	end
-	if tab.is_active then
-		return {
-			{ Background = { Color = "#90c083" } },
-			{ Foreground = { Color = "#030b09" } },
-			-- { Text = SOLID_LEFT_ARROW },
-			-- { Background = { Color = "#90c083" } },
-			{ Foreground = { Color = "#111b21" } },
-			{ Text = (tab.tab_index + 1) .. ": " .. title .. " " },
-			-- { Background = { Color = "#0b0022" } },
-			-- { Foreground = { Color = "#2b2042" } },
-			-- { Text = SOLID_RIGHT_ARROW },
-		}
-	else
-		return {
-			{ Background = { Color = "#111b21" } },
-			-- { Foreground = { Color = "#1b1032" } },
-			-- { Text = SOLID_LEFT_ARROW },
-			-- { Background = { Color = "#1b1032" } },
-			{ Foreground = { Color = "#a0bb73" } },
-			{ Text = (tab.tab_index + 1) .. ": " .. title .. " " },
-			-- { Background = { Color = "#0b0022" } },
-			-- { Foreground = { Color = "#1b1032" } },
-			-- { Text = SOLID_RIGHT_ARROW },
-		}
-	end
-end)
-
 -- This is used to make my foreground (text, etc) brighter than my background
 config.foreground_text_hsb = {
 	-- hue = 1.0,
