@@ -5,6 +5,9 @@
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
+map("n", "<Tab>", "E", { noremap = true, silent = true })
+map("n", "<S-Tab>", "B", { noremap = true, silent = true })
+map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
 map("i", "jk", "<ESC>")
 -- Chế độ chèn (Insert mode)
 map("i", "<C-h>", "<Left>", { noremap = true, silent = true })
