@@ -4,19 +4,20 @@ local act = wezterm.action
 -- local mux = wezterm.mux
 -- This will hold the configuration.
 local config = wezterm.config_builder()
+
 -- local gpus = wezterm.gui.enumerate_gpus()
 -- config.webgpu_preferred_adapter = gpus[1]
 -- config.front_end = "WebGpu"
 
 config.front_end = "OpenGL"
-config.max_fps = 120
+config.max_fps = 60
 config.term = "xterm-256color" -- Set the terminal type
 
-config.font = wezterm.font("Hack Nerd Font Propo")
+config.font = wezterm.font("Hack Nerd Font Propo", { weight = "Medium" })
 config.cell_width = 0.9
 config.window_background_opacity = 0.9
 config.prefer_egl = true
-config.font_size = 13.0
+config.font_size = 14.2
 
 config.window_padding = {
 	left = 0,
@@ -25,17 +26,10 @@ config.window_padding = {
 	bottom = 0,
 }
 
--- tabs
--- config.hide_tab_bar_if_only_one_tab = true
-config.use_fancy_tab_bar = false
-config.tab_bar_at_bottom = true
-
 config.inactive_pane_hsb = {
 	saturation = 0.0,
 	brightness = 0.3,
 }
-
--- This is where you actually apply your config choices
 
 -- color scheme toggling
 wezterm.on("toggle-colorscheme", function(window, pane)
@@ -88,16 +82,23 @@ config.keys = {
 	-- copy and paste
 	{ key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
 	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
-	-- {
-	-- 	key = "y",
-	-- 	mods = "CTRL|SHIFT",
-	-- 	action = act.Multiple({
-	-- 		act.CopyTo("ClipboardAndPrimarySelection"),
-	-- 		act.CopyMode("Close"),
-	-- 	}),
-	-- },
 
 	-- other config
+	{
+		key = "E",
+		mods = "CTRL|SHIFT",
+		action = act.PromptInputLine({
+			description = "Enter new name for tab",
+			action = wezterm.action_callback(function(window, pane, line)
+				-- line will be `nil` if they hit escape without entering anything
+				-- An empty string if they just hit enter
+				-- Or the actual line of text they wrote
+				if line then
+					window:active_tab():set_title(line)
+				end
+			end),
+		}),
+	},
 	{
 		key = "E",
 		mods = "CTRL|SHIFT|ALT",
@@ -121,17 +122,41 @@ config.keys = {
 }
 
 -- For example, changing the color scheme:
-config.color_scheme = "Everforest Dark (Gogh)"
+-- config.color_scheme = "Everforest Dark (Gogh)"
+config.force_reverse_video_cursor = true
+-- config.colors = {
+-- 	foreground = "#dcd7ba",
+-- 	background = "#1f1f28",
+--
+-- 	cursor_bg = "#c8c093",
+-- 	cursor_fg = "#c8c093",
+-- 	cursor_border = "#c8c093",
+--
+-- 	selection_fg = "#c8c093",
+-- 	selection_bg = "#2d4f67",
+--
+-- 	scrollbar_thumb = "#16161d",
+-- 	split = "#16161d",
+--
+-- 	ansi = { "#090618", "#c34043", "#76946a", "#c0a36e", "#7e9cd8", "#957fb8", "#6a9589", "#c8c093" },
+-- 	brights = { "#727169", "#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f", "#dcd7ba" },
+-- 	indexed = { [16] = "#ffa066", [17] = "#ff5d62" },
+-- }
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
-config.window_background_image = "C:\\Users\\corcl\\Pictures\\13761146.jpg"
+config.window_background_image = "C:\\Users\\corcl\\Pictures\\wallhaven-zyw2dg_1600x900.png"
 config.window_background_image_hsb = {
-	brightness = 0.3,
+	brightness = 0.15,
 }
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 bar.apply_to_config(config)
+
+-- tabs
+-- config.hide_tab_bar_if_only_one_tab = true
+config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = false
 
 -- and finally, return the configuration to wezterm
 return config
