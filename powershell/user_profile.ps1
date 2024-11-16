@@ -25,9 +25,24 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 # Env
 # $env:GIT_SSH = "C:\Windows\system32\OpenSSH\ssh.exe"
 
+
+# Eza
+Function eza-lta {
+    eza -lTag --header --hyperlink --git --icons
+}
+Function eza-l2 {
+    eza -lTL2 --header --hyperlink --git --icons
+}
+Function eza-lt {
+    eza --icons --header --hyperlink --git -lTL
+}
+
 # Alias
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name nvi -Value neovide
+Set-Alias lta eza-lta
+Set-Alias l2 eza-l2
+Set-Alias lt eza-lt
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias grep findstr
@@ -40,7 +55,7 @@ function which ($command) {
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
-function yy {
+function y {
     $tmp = [System.IO.Path]::GetTempFileName()
     yazi $args --cwd-file="$tmp"
     $cwd = Get-Content -Path $tmp
