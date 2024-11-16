@@ -34,6 +34,22 @@ def create_right_prompt [] {
     ([$last_exit_code, (char space), $time_segment] | str join)
 }
 
+# show a slightly different banner
+def show_banner [] {
+    let ellie = [
+        "     __  ,"
+        " .--()°'.'"
+        "'|, . ,'  "
+        ' !_-(_\   '
+    ]
+    let s_mem = (sys mem)
+    let s_ho = (sys host)
+    print $"(ansi reset)(ansi green)($ellie.0)"
+    print $"(ansi green)($ellie.1)  (ansi yellow) (ansi yellow_bold)Nushell (ansi reset)(ansi yellow)v(version | get version)(ansi reset)"
+    print $"(ansi green)($ellie.2)  (ansi light_blue) (ansi light_blue_bold)RAM (ansi reset)(ansi light_blue)($s_mem.used) / ($s_mem.total)(ansi reset)"
+    print $"(ansi green)($ellie.3)  (ansi light_purple)ﮫ (ansi light_purple_bold)Uptime (ansi reset)(ansi light_purple)($s_ho.uptime)(ansi reset)"
+}
+
 def --env y [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
 	yazi ...$args --cwd-file $tmp
@@ -110,4 +126,5 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
- zoxide init nushell | save -f ~/.zoxide.nu
+zoxide init nushell | save -f ~/.zoxide.nu
+show_banner

@@ -147,7 +147,7 @@ let light_theme = {
 
 # The default config record. This is where much of your global configuration is setup.
 $env.config = {
-    show_banner: true # true or false to enable or disable the welcome banner at startup
+    show_banner: false # true or false to enable or disable the welcome banner at startup
 
     ls: {
         use_ls_colors: true # use the LS_COLORS environment variable to colorize output
@@ -901,4 +901,5 @@ alias vi = nvim
 alias nvi = neovide
 alias ll = ls -l
 alias ii = explorer .
+use ~/.cache/starship/init.nu
 source ~/.zoxide.nu

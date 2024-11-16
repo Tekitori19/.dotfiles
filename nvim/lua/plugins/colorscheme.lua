@@ -235,7 +235,7 @@ return {
     },
   },
   { "rebelot/kanagawa.nvim", branch = "master", priority = 1000, opts = {
-    transparent = false,
+    transparent = true,
   } },
   {
     "ellisonleao/gruvbox.nvim",

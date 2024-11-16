@@ -11,9 +11,9 @@ return {
 
     { "<C-LeftMouse>", "<Cmd>MultipleCursorsMouseAddDelete<CR>", mode = { "n", "i" }, desc = "Add or remove cursor" },
 
-    { "<Leader>a", "<Cmd>MultipleCursorsAddMatches<CR>", mode = { "n", "x" }, desc = "Add cursors to cword" },
+    { "<Leader>z", "<Cmd>MultipleCursorsAddMatches<CR>", mode = { "n", "x" }, desc = "Add cursors to cword" },
     {
-      "<Leader>A",
+      "<Leader>Z",
       "<Cmd>MultipleCursorsAddMatchesV<CR>",
       mode = { "n", "x" },
       desc = "Add cursors to cword in previous area",

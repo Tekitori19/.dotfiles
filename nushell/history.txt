@@ -1,0 +1,1887 @@
+cls
+clear
+open
+help
+clear
+y
+yazi
+z pic
+cls
+ls
+exit
+yazi
+cd Pictures\
+yazi
+cls
+exit
+clear
+exit
+ll
+all
+all --help
+exit
+cls
+$nu.env-path
+vi
+nvim C:\Users\corcl\AppData\Roaming\nushell\env.nu
+exit
+http get voz.vn
+http get https://www.voz.vn
+cls
+which nu
+$nu.env-path
+vi C:\Users\corcl\AppData\Roaming\nushell\env.nu
+nvim C:\Users\corcl\AppData\Roaming\nushell\env.nu
+y
+exit
+y
+z pic
+help z
+zoxide --version
+cd
+cd C:\Users\corcl\AppData\Roaming\nushell\env.nu
+cd C:\Users\corcl\AppData\Roaming\nushell\
+y
+zoxide init nushell | save -f ~/.zoxide.nu
+z pic
+nvim
+y
+$nu.env-path
+nvim
+$nu.config-path
+nvim
+z nushell
+exit
+z nushell
+$nu.config-path
+cd C:\Users\corcl\AppData\Roaming\nushell\
+nvim
+zoxide init nushell | save -f ~/.zoxide.nu
+ls
+nvim
+z nushell
+cd nushell
+zoxide
+zoxide nushell
+z
+choco list
+exit
+exit
+choco uninstall zoxide
+scoop search zoxide
+scoop install zoxide
+exit
+cd C:\Users\corcl\AppData\Roaming\nushell\
+z nushell
+nvim
+exit
+z nushell
+cd C:\Users\corcl\AppData\Roaming\nushell\
+z nushell
+cd
+z nushell
+cd
+find dotfile
+z nushell
+y
+z nvim
+z nushell
+nvi
+z nushell
+touch a.http
+ll
+ls
+vi
+exit
+ll
+wsl
+tmux
+cls
+y
+ll
+ls
+ll
+cd
+cd Pictures\
+z pic
+ll | type == png
+ll | type = png
+ll | type png
+ll | file png
+ll | describe 
+42 | describe 
+cls
+z nushell
+vi
+exit
+exit
+exit
+cls
+ls | explore  -i
+vi
+exit
+vi
+nvi
+exit
+vi
+exit
+vi
+cd
+vi .wezterm.lua
+cls
+wsl
+cls
+ll
+ws;
+wsl
+z nushell
+z nvim
+cls
+ll
+ll | type == dir
+cls
+cd
+y
+cls
+pwsh
+cls
+cmd
+z nushell
+vi
+ls
+> 
+cls
+vi
+ll
+cls
+D:\
+cd D:\
+cd
+z nushell
+vi
+pwsh
+cls
+ps
+ls | where size > 500mb
+ls | where size > 1kb
+ps | where cpu > 5
+ps | where cpu > 0
+help commands | where name == each | first 
+explore 
+cd
+D:\
+y
+z laragon
+z www
+y
+z fpt
+y
+C:\
+yy
+y
+cd
+y
+cls
+z pic
+cd
+cd Desktop\.dotfiles\
+z .dot
+ll
+vi
+http get https://www.voz.vn
+exit
+cls
+exit
+cls
+cd
+cls
+exit
+cls
+ll
+cls
+ls
+ls | where size > 500mb
+ls | where size > 1kb
+ll | type == dir
+cls
+ls | where size > 1kb
+cls
+exit
+exit
+z www
+y
+vi
+wsl
+cls
+vi
+vi
+cls
+php artisan serve
+z www
+y
+ii .
+explore 
+ls
+cls
+z nushell
+ex
+vi
+cls
+ex
+ii
+cls
+exit
+cls
+z nushell
+cd
+cls
+cd
+z laragon
+z www
+y
+git remote add origin https://github.com/Tekitori19/movie-app.git
+git branch -M main
+git push -u origin main
+lazygit
+cls
+lazygit
+git -v
+git --version
+cls
+cat --help
+cls
+./laragon.exe
+cls
+git cb dinh
+git --help
+git branch --help
+git cb -b dinh
+git cb dinh
+git checkout -b BE
+git branch 
+git push -u origin BE
+z laragon
+z www
+cls
+lazygit
+z www
+cd movie-app\
+lazygit
+git push -u origin BE
+git switch main
+git switch BE
+git branch 
+vi
+lazygit
+exit
+z www
+cd movie-app\
+vi
+exit
+z laragon
+./laragon.exe
+cls
+exit
+git clone https://github.com/thecodeholic/laravel-vue-ecommerce.git
+cd ..
+..
+z laragon
+choco install php
+./laragon.exe
+composer global require laravel/installer
+choco search composer
+choco install composer
+composer --version
+composer 
+exit
+z laragon
+./laragon.exe
+cls
+z www
+cd laravel-vue-ecommerce\
+composer update
+composer update -W
+composer install
+php --ini
+..
+ls
+cd movie-app\
+php artisan serve
+composer install --ignore-platform-req=ext-fileinfo
+php artisan serve
+php artisan 
+php artisan migrate
+php artisan migrate:fresh
+vi
+php artisan key:generate --ansi
+vi
+php artisan key:generate --ansi
+php artisan migrate --seed
+vi
+php artisan migrate --seed
+php artisan migrate
+php artisan migrate:fresh
+vi
+cls
+php artisan serve
+php artisan
+php artisan migrate:install
+php artisan migrate:refresh
+php artisan migrate --seed
+vi
+php artisan migrate --seed
+php -v
+vi
+php --ini
+cd C:\tools\php83\
+vi
+php artisan migrate --seed
+cd
+z www
+cd laravel-vue-ecommerce\
+vi
+php artisan migrate --seed
+php artisan serve
+..
+y
+ii
+cls
+git branch 
+git branch main
+git switch main
+git branch 
+lazygit
+git switch main
+git branch 
+git switch BE
+ii
+git switch main
+lazygit
+cls
+lazygit
+composer global require laravel/installer
+laravel new  .
+ll
+ls
+laravel new  app
+composer install
+ll
+cd app
+composer install
+vi C:\tools\php83\php.ini
+cls
+composer install
+ii
+..
+laravel new VIPBank
+rm -rf VIPBank
+ll
+laravel new movie-app
+cd movie-app\
+ii
+..
+lazy
+lazygit
+laravel new movie-app
+cd movie-app\
+ii
+..
+cd movie-app\
+ll
+..
+ll
+lazygit
+ll
+lazygit
+ls -a
+lazygit
+git push origin -d BE
+git checkout -b BE
+git branch -d BE
+git branch
+git branch -D BE
+git checkout -b BE
+phpstorm .
+phpstorm
+ii .
+lazygit
+php artisan serve
+php artisan migrate --seed
+php artisan serve
+cls
+vi
+php artisan serve
+z laragon
+./laragon.exe
+cls
+composer -v
+composer version
+composer --version
+php.ini
+z www
+cd movie-app\
+vi
+scoop --version
+choco version
+choco --version
+cls
+git checkout -b test
+git branch
+composer require laravel/ui
+php artisan ui vue --auth
+npm install && run dev
+npm install , run dev
+z laragon
+npm install; npm run dev
+php artisan migrate
+php artisan ui vue --auth
+vi
+php artisan ui vue --auth
+php artisan serve
+cls
+git switch BE
+git branch
+git branch -D test
+git branch
+git checkout -b test
+composer require laravel/ui
+vi
+git switch BE
+vi
+git pull origin BE
+vi
+git branch -d BE
+git switch test
+git branch -d BE
+git pull origin BE
+git switch BE
+vi
+git switch test
+git fetch origin BE
+git switch BE
+vi
+git switch test
+vi
+lazygit
+git switch BE
+vi
+git branch -d test
+git branch -D test
+git checkout -b test
+vi
+composer require laravel/ui
+php artisan ui vue --auth
+php artisan migrate
+npm install
+php artisan serve
+npm run build
+php artisan serve
+php artisan
+php artisan ui
+php artisan ui --help
+git add .
+git commit -m 'hihi'
+git switch BE
+vi
+git branch -D test
+git checkout -b test
+vi
+composer require laravel/ui
+php artisan ui --auth
+php artisan
+php artisan ui:auth
+php artisan serve
+lazygit
+git switch BE
+php artisan serve
+git switch test
+vi
+git push origin test
+git checkout -b template-html
+y
+ii
+php artisan serve
+lazygit
+git push origin template-html
+git branch
+git switch test
+php artisan serve
+ll
+ii
+cls
+php artisan serve
+vi
+composer install
+php artisan serve
+php artisan migrate
+vi php --ini
+vi C:\tools\php83\php.ini
+php artisan migrate
+php artisan key:generate
+vi
+php artisan serve
+php artisan key:generate
+php artisan serve
+npm run build
+npm install
+cls
+vi
+cls
+npm run build
+php artisan serve
+php artisan optimize:clear
+php artisan serve
+npm install --save-dev sass vite-plugin-sass
+npm install
+npm run build
+php artisan serve
+git branch
+php artisan ui:auth
+php artisan serve
+git branch BE
+git switch BE
+git branch
+git switch BE
+lazygit
+git switch BE
+vi
+php artisan serve
+lazygit
+z laragon
+z www
+cd movie-app\
+git branch
+vi
+z laragon
+ii
+php artisan make:controller
+php artisan serve
+cls
+lazygit
+php artisan serve
+cls
+lazygit
+cls
+php artisan 
+php artisan route:list
+php artisan route:list --help
+php artisan route:list --except-vendor
+vi
+lazygit
+git checkout -b FE
+git branch
+mkdir frontend
+cd frontend\
+npm create vite@latest
+npm i
+npm install -S vue-router@4
+npm install -s vuex@4
+npm install -S vuex@4
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+ll
+vi
+npm run dev
+exit
+exit
+z fpt
+y
+z www
+cd movie-app\
+git switch BE
+php artisan route:list --except-vendor
+cls
+php artisan route:list --except-vendor
+vi
+exit
+exit
+php artisan serve
+z fpt
+y
+vi
+cls
+node test.js
+z www
+cd movie-app\
+lazygit
+z fpt
+y
+cls
+cursor .
+cls
+ii
+cd 
+vi .wezterm.lua
+node test.js
+cls
+node test.js
+cls
+node test.js
+vi
+node test.js
+cls
+node test.js
+ii 
+node lab1.js
+node lab2.js
+node lab1.js
+cls
+node lab2.js
+cls
+z www
+cd movie-app\
+git branch
+git switch FE
+lazygit
+cd frontend\
+ll
+pnpm run dev
+cls
+choco install pnpm
+cls
+pnpm run dev
+cls
+pnpm -v
+vi
+cls
+z fpt
+y
+nvi
+vi
+nvi
+vi
+z .dot
+vi
+z fpt
+y
+vi
+ii
+nvi
+cls
+vi
+cls
+z fpt
+y
+vi
+node lab2.js
+cls
+vi
+cls
+z www
+y
+vi
+z www
+y
+vi
+z www
+cd movie-app\
+git branch
+lazygit
+git switch temp
+git switch template-html
+ii
+lazygit
+git switch Be
+git switch BE
+git branch
+ii 
+cls
+ll
+git switch template-html
+ll
+git add .
+lazygit
+git commit -m 'delete unnecessary file'
+git push origin template-html
+git pull origin template-html
+ll
+git fetch origin template-html
+ll
+ls -a
+ii 
+cls
+git branch -D template-html
+git switch BE
+git merge --quit
+git switch BE
+git commit -m 'delete unnecessary file'
+git merge
+git merge --quit
+git switch BE
+lazygit
+git switch BE
+git branch -D template-html
+git branch
+git pull origin template-html
+ll
+lazygit
+y
+ll
+lazygit
+git push origin template-html
+git push origin template-html -f
+git push origin template-html --help
+cls
+git push origin template-html
+lazygit
+touch test
+lazygit
+ll
+git branch
+git reflog
+git checkout -b BE a1c6ce4
+git checkout a1c6ce4
+ll
+git reflog
+git checkout bee4a85
+ll
+vi
+lazygit
+git checkout a1c6ce4
+lazygit
+git checkout a1c6ce4
+git checkout -b template-html
+git branch
+git pull origin template-html
+git branch
+ll
+git fetch origin template-html
+ll
+y
+ll
+lazygit
+git switch BE
+ll
+git switch template-html
+ll
+lazygit
+git branch
+git switch FE
+ll
+vi
+git switch BE
+ll
+git reflog
+git checkout a1c6ce4
+git fetch origin BE
+ll
+php artisan serve
+z laragon
+vi
+php artisan serve
+ll
+vi
+composer install
+php artisan key:generate
+php artisan serve
+cls
+php artisan serve
+cls
+vi
+cls
+vi
+ll
+php artisan serve
+cls
+z laragon
+z www
+cd movie-app\
+..
+laravel new test
+ll
+laravel new test-auth
+cd test-auth\
+composer run dev
+cls
+php artisan migrate
+..
+y
+z fpt
+y
+vi
+ii
+laravel new auth
+composer run dev
+cd auth\
+composer run dev
+vi
+composer run dev
+php artisan migrate
+php artisan
+php artisan migrate
+vi
+cls
+..
+y
+laravel new auth
+z www
+cd movie-app\
+git switch BE
+lazygit
+vi
+git switch FE
+ll
+git switch BE
+ll
+git commit -m 'delete unnecessary file'
+git switch FE
+git branch -d BE
+git branch -D BE
+git fetch origin BE
+git branch
+git reflog
+cls
+git checkout BE
+ll
+git pull origin BE
+vi
+git switch FE
+ll
+vi
+git switch BE
+lazygit
+cls
+vi
+cd frontend\
+git branch
+git switch FE
+vi
+open frontend\
+cd frontend\
+vi .wezterm.lua
+cls
+vi
+cls
+vi .wezterm.lua
+z fpt
+y
+ii
+y
+node dinhpdpd09993_lab3.js
+cls
+exit
+node dinhpdpd09993_lab3.js
+vi
+cls
+vi
+cd
+vi .wezterm.lua
+z fpt
+y
+vi
+cd
+vi .wezterm.lua
+cls
+z www
+cd movie-app\
+lazygit
+vi
+z fpt
+y
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+z .dot
+lazygit
+vi
+cls
+vi
+cls
+vi
+cursor .
+cls
+cursor .
+z www
+cd movie-app\
+cd frontend\
+vi
+cls
+vi
+nvi
+y
+cd
+exit
+cls
+lazygit
+cls
+cls
+vi
+lazygit
+..
+lazygit
+git branch -D test
+git branch
+git checkout BE
+ll
+git checkout test
+vi
+composer require laravel/breeze --dev
+z laragon
+ii
+php artisan breeze:install
+php artisan migrate
+npm install
+php artisan serve
+vi
+git add .
+git commit -m '?'
+git switch BE
+vi
+git switch test
+vi
+git branch -D test
+git switch BE
+git branch -D test
+git branch
+cls
+composer require laravel/breeze --dev
+git branch
+php artisan breeze:install
+php artisan migrate
+npm install
+cls
+php artisan route:list --except-vendor
+cls
+y
+vi
+vi
+lazygit
+cursor .
+cls
+which cmd
+cd
+z pic
+y
+z pic
+y
+cls
+z laragon
+z www
+cd movie-app\
+vi
+cursor .
+cls
+d:
+D:
+D:\
+y
+cls
+y
+vi
+cls
+ii
+cd
+vi .wezterm.lua
+cls
+z www
+cd movie-app\
+vi
+cls
+cd 
+vi
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+cls
+vi
+cls
+vi .wezterm.lua
+z pic
+ii
+cd
+z .dot
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+ll
+z www
+cd movie-app\
+vi
+z neovim
+vi
+z .dot
+vi
+cls
+z fpt
+y
+vi
+cd 
+vi .wezterm.lua
+vi
+cls
+cls
+vi
+z www
+cd movie-app\
+vi
+z fpt
+y
+vi
+z www
+cd movie-app\
+vi
+z fpt
+y
+vi
+ll
+node dinhpdpd09993_lab3.js
+cls
+ii
+exit
+ll
+cd lab3\
+node dinhpdpd09993_lab3.js
+vi
+cls
+cd lab3\
+node dinhpdpd09993_lab3.js
+cls
+vi
+vi
+cls
+y
+z pic
+y
+vi
+which nu
+vi
+z .dot
+vi
+nvi
+y
+cls
+exit
+cls
+vi
+cls
+vi
+nvim -v
+vi
+cls
+exit
+cls
+vi
+exit
+cls
+vi
+cls
+vi
+cls
+c;s
+cls
+vi
+cls
+vi
+nvi
+vi
+nvi
+vi
+nvi
+cls
+y
+exit
+cls
+vi .wezterm.lua
+vi
+exit
+vi
+cls
+z laragon
+ll
+z www
+ll
+ii
+..
+ii
+z fpt
+y
+nvi
+cls
+..
+ii
+z fpt
+y
+nvi
+vi
+z fpt
+y
+vi
+cls
+nvi
+ii
+ll
+node dinhpdpd09993_lab4.js
+cls
+node dinhpdpd09993_lab4.js
+cls
+nvi
+composer install
+ll
+..
+y
+ii
+cd
+z .dot
+y
+laravel new crud
+cd crud\
+composer run dev
+php artisan migrate
+php artisan key:generate
+php artisan make:migration create_products_table
+php artisan make:model Product
+php artisan make:controller ProductController --resource
+php artisan storage:link
+php artisan migrate
+php artisan serve
+cls
+vi
+cls
+ii
+php artisan migrate
+..
+ii
+exit
+php artisan serve
+npm install
+npm run build
+php artisan serve
+composer install
+php artisan serve
+php artisan migrate
+vi
+php artisan migrate:refresh
+php artisan migrate --help
+php artisan
+php artisan migrate:fresh
+php artisan serve
+composer run dev
+cls
+cd
+z .dot
+vi .wezterm.lua
+cls
+vi
+vi .wezterm.lua
+cls
+z laragon
+ii
+cls
+y
+cd
+z pic
+y
+cd
+vi .wezterm.lua
+cls
+z pic
+ii
+vi
+cd
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi
+cd
+vi .wezterm.lua
+vi
+z nvim
+ll
+lazygit
+cls
+vi
+i
+vi
+cd
+vi .wezterm.lua
+z nvim
+vi
+cd
+vi .wezterm.lua
+cls
+cd
+vi
+cd %APPDATA%\alacritty\alacritty.toml
+%APPDATA%\alacritty\alacritty.toml
+cd %APPDATA%\alacritty\
+cd AppData\
+mkdir alacritty
+cd alacritty\
+touch alacritty.toml
+cls
+z alac
+cd
+vi .wezterm.lua
+z alac
+vi
+exit
+z alac
+vi
+%APPDATA%\
+exit
+z alac
+..
+y
+cd C:\Users\corcl\AppData\Roaming
+y
+mkdir alacritty
+cd alacritty\
+touch alacritty.toml
+vi
+exit
+z nushell
+..
+cd alacritty\
+z alac
+z nushell
+..
+cd alacritty\
+cls
+y
+vi
+exit
+# Alacritty Configuration (converted from WezTerm)
+window:
+font:
+colors:
+tabs:
+background_opacity: 0.9
+# Alacritty uses a different method for toggling opacity, 
+# which may need external scripts or plugins.
+scrolling:
+key_bindings:
+shell:
+cls
+exit
+vi
+alacritty migrate
+vi
+cls
+alacritty migrate
+cls
+vi
+cls
+exit
+cls
+cd
+z pic
+y
+z fot
+z fpt
+cls
+y
+vi
+y
+vi
+alacritty .
+exit
+alacritty
+cls
+y
+vi
+cls
+cd
+vi .wezterm.lua
+vi .wezterm.lua
+cls
+vi
+exit
+vi .wezterm.lua
+exit
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+z www
+cd movie-app\
+lazygit
+cd
+vi .wezterm.lua
+ll
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+z www
+cd movie-app\
+lazygit
+cd
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+exit
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+dc
+cd
+z .dot
+vi
+cd
+z nvim
+y
+ii
+ii
+lazygit
+vi
+lazygit
+cd
+vi .wezterm.lua
+cls
+wsl
+cls
+vi
+cls
+vi
+cls
+vi
+cls
+vi
+cls
+vi
+z nvim
+lazygit
+vi
+z www
+cd movie-app\
+vi
+cls
+choco upgrade neovim
+nvim -v
+nvim -V1 -v
+vi
+cls
+cd
+cls
+vi
+z nvim
+lazygit
+vi
+exit
+cls
+z pic
+y
+cd
+y
+D:\
+y
+exit
+cls
+z alac
+y
+nvi
+exit
+vi
+exit
+vi
+vi .wezterm.lua
+z go
+ll
+D:\
+z go
+ll
+y
+bat cmd\web\main.go
+cat cmd\web\main.go
+bat
+pwsh
+choco search bat
+scoop search bat
+scoop install bat
+bat cmd\web\main.go
+z fpt
+y
+bat dinhpdpd09993_lab4.js
+cls
+y
+touch test
+vi
+cd
+z nushell
+cls
+z .dot
+vi
+lazygit
+vi
+vi
+gdu
+cls
+ii
+cls
+cls
+cd
+scoop search rust
+rust --version
+rustup
+vi
+cargo run main.rs
+cargo
+cargo new app
+cd app
+cargo run
+cargo run main.rs
+vi
+rustup self uninstall
+cargo run main.rs
+vi
+cls
+vi
+rustup add component rust-analyzer
+rustup add component rust-analyzer --help
+rustup
+rustup component add rust-analyzer
+cargo run
+which rust-analyzer
+rust-analyzer --version
+vi
+cargo run
+ll
+cls
+mkdir let_try
+cd let_try\
+vi
+bat tail.html
+random 
+random --help
+random int
+random dice
+cls
+random dice
+random dice * 2
+random dice -h
+random dice --dice 10 --sides 12
+random dice --dice 10 
+random dice --dice 10 --sides 40
+random dice --dice 10 --sides 10
+random dice --dice 10 --sides 12
+random dice --dice 10 --sides 6
+6
+3
+2
+1
+4
+1
+5
+4
+cls
+y
+ll
+rm -rf let_try\
+ll
+z fpt
+y
+git clone https://github.com/firtman/coffeemasters-vanilla.git
+ll
+y
+rm -rf Assignment\
+ll
+git clone https://github.com/firtman/coffeemasters-vanilla.git
+rename coffeemasters-vanilla\ Assignment\
+ll
+rename --help
+y
+git branch
+y
+vi
+cls
+cd
+z .dot
+vi .wezterm.lua
+pwsh
+vi .wezterm.lua
+cls
+z fpt
+y
+bat dinhpdpd09993_lab4.js
+node test.js
+cd
+exit
+node test.js
+vi
+ll
+mkdir let_try
+cd let_try\
+npm init -y
+pnpm install axios
+pnpm add -g @pnpm/exe
+pnpm setup
+pnpm add -g @pnpm/exe
+pnpm help add
+choco search pnpm
+ii
+node src.js
+exit
+node src.js
+cls
+node -v
+z rust
+y
+ii
+bat rust-for-network-programming-and-automation.pdf
+cls
+vi
+..
+node dinhpdpd09993_lab4.js
+vi
+y
+ii
+cd ..
+ll
+y
+..
+node src.js
+npm install
+pnpm 
+pnpm run src.js
+pnpm run
+node src.js
+z fpt
+y
+cd `Nộp lab\`
+vi
+z laragon
+z www
+cd shopee-clone\
+lazygit
+git config --global --add safe.directory D:/laragon/www/shopee-clone
+lazygit
+git reflog
+git checkout cb7ff11
+git commit -m '?'
+git add .
+git commit -m '?'
+vi
+git checkout a_mien
+git branch a_mien
+git switch a_mien
+git branch
+ll
+lazygit
+cls
+bat Framework_Tu_Code\Router.php
+cd
+z www
+cd shopee-clone\
+bat Framework_Tu_Code\Router.php
+exit
+cls
+vi
+cls
+y
+z fpt
+y
+mkdir BE-Assignment
+cd BE-Assignment\
+cargo new .
+cargo new 
+ll
+cargo init
+ll
+vi
+cls
+random dice --dice 10 --sides 6
+random dice 
+random dice --dice 10 --sides 6
+node test.js
+cargo run
+vi
+cls
+vi
+z fpt
+vi
+nvi
+vi
+z www
+vi
+cd shopee-clone\
+vi
+z www
+cd shopee-clone\
+vi
+wsl
+git add .
+git commit -m '?'
+git branch
+git switch main
+git branch
+git branch -D a_mien
+ll
+vi
+cls
+y
+vi
+ll
+y
+vi
+exit
+alacritty
+cls
+z pic
+cd
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+z www
+cd shopee-clone\
+vi
+cls
+vi
+vi
+i
+vi
+git checkout split_mvc
+git branch split_mvc
+lazygit
+git switch split_mvc
+lazygit
+git branch main
+git switch main
+git reflog
+git checkout cb7ff11
+lazygit
+git branch
+git switch main 
+git pull origin main
+y
+git fetch origin main
+y
+git switch split_mvc
+git branch -D main
+git checkout -b main
+ll
+git fetch origin main
+y
+composer install
+git switch split_mvc
+y
+git branch
+git fetch origin split_mvc
+y
+git pull origin split_mvc
+git switch main
+git branch -D split_mvc
+git branch
+git checkout -b split_mvc
+git switch split_mvc
+git fetch origin split_mvc
+y
+git reflog
+git checkout cb7ff11
+git branch
+y
+lazygit
+ll
+cd
+z www
+cd shopee-clone\
+git reflog
+git checkout 32e2ffd
+y
+..
+y
+..
+vi
+lazygit
+cls
+cursor .
+vi
+z fpt
+z tailwind
+y
+vi
+cls
+z www
+z fpt
+y
+open dinhpdpd09993_lab2.js
+cls
+z nushell
+ll
+vi
+cargo install nu_plugin_gstat
+z www
+cd shopee-clone\
+which nu_plugin_gstat
+plugin add C:\Users\corcl\.cargo\bin\nu_plugin_gstat.exe
+plugin use gstat
+z nushell
+ll
+plugin add C:\Users\corcl\.cargo\bin\nu_plugin_gstat.exe
+which nu
+cls
+z fpt
+z www
+cd shopee-clone\
+plugin add C:\Users\corcl\.cargo\bin\nu_plugin_gstat.exe
+plugin use gstat
+cls
+nu version
+exit
+nu
+cls
+nu -v
+cls
+gstat
+plugin use gstat
+which gstat
+which nu_plugin_gstat
+plugin add nu_plugin_gstat
+plugin use nu_plugin_gstat
+gstat
+cd
+gstat
+z www
+cd movie-app\
+gstat
+cd
+scoop install starship
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+use ~/.cache/starship/init.nu
+cls
+ll
+starship
+vi
+use ~/.cache/starship/init.nu
+cls
+z nushell
+vi
+cd
+starship preset no-empty-icons -o ~/.config/starship.toml
+ll
+cls
+cd .config\
+ll
+cls
+exit
+cls
+$nu.config-path
+z nushell
+vi 
+cls
+z www
+cd movie-app\
+cd
+cd .cache\
+vi
+cls
+ll
+cd starship\
+;;
+ll
+cd
+vi
+cd .cache\
+vi
+cls
+cd
+cd .cargo\
+ll
+y
+cd
+export STARSHIP_CONFIG=~/.config/starship.toml
+help export
+let STARSHIP_CONFIG = ~/.config/starship.toml
+cls
+$env
+pwsh
+z www
+cd movie-app\
+$env
+$env.config
+z nushell
+vi
+z
+cd .cache\
+ll
+y
+cls
+z fpt
+y
+cls
+exit
+cls
+vi
+vi
+z
+cls
+pwsh
+$env.HOMEPATH
+z nushell
+vi
+$env.STARSHIP_CONFIG = $env.HOME + "/.config/starship.toml"
+z
+ll
+cd .config\
+ll
+$env.HOMEPATH
+$env.STARSHIP_CONFIG = $env.HOMEPATH + "\.config\starship.toml"
+$env.STARSHIP_CONFIG = $env.HOMEPATH + "\\.config\\starship.toml"
+z www
+cd movie-app\
+$env.STARSHIP_CONFIG
+z www
+cd movie-app\
+cls
+z
+y
+cls
+z nushell
+vi
+cls
+vi
+cls
+$nu.startup-time
+vi
+cls
+$nu.startup-time
+$nu.os-info
+cls
+z fpt
+y
+cls
+npx serve .
+cls
+cursor .
+z nvim
+ii
+z nushell
+ii
+cd
