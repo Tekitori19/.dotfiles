@@ -902,6 +902,7 @@ alias nvi = neovide
 alias ll = ls -l
 alias ii = explorer .
 alias lta = eza -lTag --icons
-alias lt = eza -lT2 --icons
+alias l2 = eza -TL2 --icons
+alias lt = eza --icons -TL
 use ~/.cache/starship/init.nu
 source ~/.zoxide.nu
