@@ -10,14 +10,15 @@ local config = wezterm.config_builder()
 -- config.front_end = "WebGpu"
 
 config.front_end = "OpenGL"
-config.max_fps = 60
+config.max_fps = 120
 config.term = "xterm-256color" -- Set the terminal type
 
 config.font = wezterm.font("Hack Nerd Font Propo", { weight = "Medium" })
 config.cell_width = 0.9
 config.window_background_opacity = 0.9
 config.prefer_egl = true
-config.font_size = 14.2
+-- config.font_size = 14.5
+config.font_size = 13
 
 config.window_padding = {
 	left = 0,
@@ -32,6 +33,7 @@ config.inactive_pane_hsb = {
 }
 
 -- color scheme toggling
+---@diagnostic disable-next-line: unused-local
 wezterm.on("toggle-colorscheme", function(window, pane)
 	local overrides = window:get_config_overrides() or {}
 	if overrides.color_scheme == "Zenburn" then
@@ -54,6 +56,39 @@ config.keys = {
 	{ key = "j", mods = "CTRL|SHIFT|ALT", action = act({ AdjustPaneSize = { "Down", 5 } }) },
 	{ key = "k", mods = "CTRL|SHIFT|ALT", action = act({ AdjustPaneSize = { "Up", 5 } }) },
 	{ key = "l", mods = "CTRL|SHIFT|ALT", action = act({ AdjustPaneSize = { "Right", 5 } }) },
+
+	{
+		key = "LeftArrow",
+		mods = "CTRL|SHIFT",
+		action = act.SendKey({
+			key = "LeftArrow",
+			mods = "CTRL|SHIFT",
+		}),
+	},
+	{
+		key = "RightArrow",
+		mods = "CTRL|SHIFT",
+		action = act.SendKey({
+			key = "RightArrow",
+			mods = "CTRL|SHIFT",
+		}),
+	},
+	{
+		key = "UpArrow",
+		mods = "CTRL|SHIFT",
+		action = act.SendKey({
+			key = "UpArrow",
+			mods = "CTRL|SHIFT",
+		}),
+	},
+	{
+		key = "DownArrow",
+		mods = "CTRL|SHIFT",
+		action = act.SendKey({
+			key = "DownArrow",
+			mods = "CTRL|SHIFT",
+		}),
+	},
 
 	-- tmux like
 	{
@@ -122,7 +157,7 @@ config.keys = {
 }
 
 -- For example, changing the color scheme:
--- config.color_scheme = "Everforest Dark (Gogh)"
+config.color_scheme = "duckbones"
 config.force_reverse_video_cursor = true
 -- config.colors = {
 -- 	foreground = "#dcd7ba",
@@ -145,9 +180,10 @@ config.force_reverse_video_cursor = true
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
-config.window_background_image = "C:\\Users\\corcl\\Pictures\\wallhaven-zyw2dg_1600x900.png"
+-- config.window_background_image = "C:\\Users\\corcl\\Pictures\\wallhaven-9d1zdd_1600x900.png"
+config.window_background_image = "C:\\Users\\corcl\\Pictures\\viktor.png"
 config.window_background_image_hsb = {
-	brightness = 0.15,
+	brightness = 0.1,
 }
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
