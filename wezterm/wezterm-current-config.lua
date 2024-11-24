@@ -118,6 +118,9 @@ config.keys = {
 	{ key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
 	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
 
+	-- override "ctrl-shift-x" để không làm gì cả
+	{ key = "x", mods = "CTRL|SHIFT", action = act.DisableDefaultAssignment },
+
 	-- other config
 	{
 		key = "E",
