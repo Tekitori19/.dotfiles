@@ -39,7 +39,7 @@ if vim.g.neovide then
   -- set true để gõ tiếng viêt
   vim.g.neovide_input_ime = true
 
-  vim.g.neovide_refresh_rate = 60
+  vim.g.neovide_refresh_rate = 120
   -- This is how fast the cursor animation "moves", default 0.06
   vim.g.neovide_cursor_animation_length = 0.04
   -- Default 0.7

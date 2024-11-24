@@ -1,0 +1,335 @@
+return {
+  "nvimdev/dashboard-nvim",
+  lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
+  opts = function()
+    local logo = [[
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀
+⠀⢀⣀⣀⡀⠀⣀⡀⠀⡀⠀⠀⣀⠀⠀⠀⣀⠀⠀⢠⡘⣇⣤⣄⠀⢀⡤⣄⢀⣼⣤⡄⠈⣹⠟⠀
+⠀⠀⠿⠁⠻⠐⢧⡽⠃⠳⠿⢷⠏⠀⠀⠀⠸⠾⠷⠟⠀⠟⠁⠻⠀⠿⠶⠻⠄⠸⠇⠀⠀⣡⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+              @NeoVim của Dwcks 😊            
+    ]]
+
+    logo = string.rep("\n", 8) .. logo .. "\n\n"
+
+    local opts = {
+      theme = "doom",
+      hide = {
+        -- this is taken care of by lualine
+        -- enabling this messes up the actual laststatus setting after loading a file
+        statusline = false,
+      },
+      config = {
+        header = vim.split(logo, "\n"),
+        -- stylua: ignore
+        center = {
+          { action = 'lua LazyVim.pick()()',                           desc = " Find File",       icon = " ", key = "f" },
+          { action = "ene | startinsert",                              desc = " New File",        icon = " ", key = "n" },
+          { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
+          { action = 'lua LazyVim.pick("live_grep")()',                desc = " Find Text",       icon = " ", key = "g" },
+          { action = 'lua LazyVim.pick.config_files()()',              desc = " Config",          icon = " ", key = "c" },
+          { action = 'lua require("persistence").load()',              desc = " Restore Session", icon = " ", key = "s" },
+          { action = "LazyExtras",                                     desc = " Lazy Extras",     icon = " ", key = "x" },
+          { action = "Lazy",                                           desc = " Lazy",            icon = "󰒲 ", key = "l" },
+          { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
+        },
+        footer = function()
+          local stats = require("lazy").stats()
+          local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+          return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
+        end,
+      },
+    }
+
+    for _, button in ipairs(opts.config.center) do
+      button.desc = button.desc .. string.rep(" ", 43 - #button.desc)
+      button.key_format = "  %s"
+    end
+
+    -- open dashboard after closing lazy
+    if vim.o.filetype == "lazy" then
+      vim.api.nvim_create_autocmd("WinClosed", {
+        pattern = tostring(vim.api.nvim_get_current_win()),
+        once = true,
+        callback = function()
+          vim.schedule(function()
+            vim.api.nvim_exec_autocmds("UIEnter", { group = "dashboard" })
+          end)
+        end,
+      })
+    end
+
+    return opts
+  end,
+}
+
+return {
+  -- {
+  --   "neanias/everforest-nvim",
+  --   config = function()
+  --     require("everforest").setup({
+  --       transparent_background_level = 2,
+  --       diagnostic_virtual_text = "coloured",
+  --       -- disable_terminal_colours = true,
+  --       -- background = "soft",
+  --       -- ui_contrast = "low",
+  --       on_highlights = function(hl, palette)
+  --         hl.NormalFloat = { fg = palette.fg, bg = palette.none }
+  --       end,
+  --     })
+  --   end,
+  -- },
+  -- {
+  --   "diegoulloao/neofusion.nvim",
+  --   priority = 1000,
+  --   config = true,
+  --   opts = {
+  --     transparent_mode = true,
+  --     overrides = {},
+  --     palette_overrides = {
+  --       -- dark0 = "#002b36",
+  --       -- dark1 = "#073642",
+  --       -- dark2 = "#586e75",
+  --       -- dark3 = "#657b83",
+  --       -- dark4 = "#839496",
+  --       -- light0 = "#93a1a1",
+  --       -- light1 = "#eee8d5",
+  --       -- light2 = "#fdf6e3",
+  --       -- light3 = "#b58900",
+  --       -- light4 = "#cb4b16",
+  --       -- bright_red = "#dc322f",
+  --       -- bright_green = "#859900",
+  --       -- bright_yellow = "#b58900",
+  --       -- bright_blue = "#268bd2",
+  --       -- bright_purple = "#6c71c4",
+  --       -- bright_aqua = "#2aa198",
+  --       -- bright_orange = "#cb4b16",
+  --       -- neutral_red = "#dc322f",
+  --       -- neutral_green = "#859900",
+  --       -- neutral_yellow = "#b58900",
+  --       -- neutral_blue = "#268bd2",
+  --       -- neutral_purple = "#6c71c4",
+  --       -- neutral_aqua = "#2aa198",
+  --       -- neutral_orange = "#cb4b16",
+  --       -- faded_red = "#dc322f",
+  --       -- faded_green = "#586e75",
+  --       -- faded_yellow = "#b58900",
+  --       -- faded_blue = "#657b83",
+  --       -- faded_purple = "#6c71c4",
+  --       -- faded_aqua = "#2aa198",
+  --       -- faded_orange = "#cb4b16",
+  --       -- dark_red = "#3d1c1e",
+  --       -- light_red = "#fdf6e3",
+  --       -- dark_green = "#3d4c3c",
+  --       -- light_green = "#859900",
+  --       -- dark_aqua = "#073642",
+  --       -- light_aqua = "#93a1a1",
+  --       -- gray = "#586e75",
+  --
+  --       -- dark0 = "#06120b",
+  --       -- dark1 = "#0a1f0d",
+  --       -- dark2 = "#0c2e10",
+  --       -- dark3 = "#0d3b13",
+  --       -- dark4 = "#0f4816",
+  --       -- light0 = "#b2e8a0",
+  --       -- light1 = "#b2e8a0",
+  --       -- light2 = "#82c464",
+  --       -- light3 = "#679f50",
+  --       -- light4 = "#4b7b3c",
+  --       -- bright_red = "#e63946",
+  --       -- bright_green = "#6edc5b",
+  --       -- bright_yellow = "#e63946",
+  --       -- bright_blue = "#98d98e",
+  --       -- bright_purple = "#d62828",
+  --       -- bright_aqua = "#98d98e",
+  --       -- bright_orange = "#e63946",
+  --       -- neutral_red = "#d62828",
+  --       -- neutral_green = "#6edc5b",
+  --       -- neutral_yellow = "#d62828",
+  --       -- neutral_blue = "#3f704d",
+  --       -- neutral_purple = "#a61919",
+  --       -- neutral_aqua = "#b2e8a0",
+  --       -- neutral_orange = "#6edc5b",
+  --       -- faded_red = "#e63946",
+  --       -- faded_green = "#4f6220",
+  --       -- faded_yellow = "#d62828",
+  --       -- faded_blue = "#4b7b3c",
+  --       -- faded_purple = "#a61919",
+  --       -- faded_aqua = "#4f6220",
+  --       -- faded_orange = "#d62828",
+  --       -- dark_red = "#5a1e20",
+  --       -- light_red = "#f08884",
+  --       -- dark_green = "#4f6220",
+  --       -- light_green = "#98b020",
+  --       -- dark_aqua = "#0d3b13",
+  --       -- light_aqua = "#c1e6a5",
+  --       -- gray = "#3f704d",
+  --
+  --       -- dark0 = "#1C1C1C",
+  --       -- dark1 = "#262626",
+  --       -- dark2 = "#303030",
+  --       -- dark3 = "#3B3B3B",
+  --       -- dark4 = "#4F4F4F",
+  --       -- light0 = "#FDF6E3",
+  --       -- light1 = "#F1E7B6",
+  --       -- light2 = "#268BD2",
+  --       -- light3 = "#2AA198",
+  --       -- light4 = "#859900",
+  --       -- bright_red = "#D30102",
+  --       -- bright_green = "#859900",
+  --       -- bright_yellow = "#B58900",
+  --       -- bright_blue = "#268BD2",
+  --       -- bright_purple = "#6C71C4",
+  --       -- bright_aqua = "#2AA198",
+  --       -- bright_orange = "#D16D00",
+  --       -- neutral_red = "#D30102",
+  --       -- neutral_green = "#859900",
+  --       -- neutral_yellow = "#B58900",
+  --       -- neutral_blue = "#268BD2",
+  --       -- neutral_purple = "#6C71C4",
+  --       -- neutral_aqua = "#2AA198",
+  --       -- neutral_orange = "#D16D00",
+  --       -- faded_red = "#D30102",
+  --       -- faded_green = "#859900",
+  --       -- faded_yellow = "#B58900",
+  --       -- faded_blue = "#268BD2",
+  --       -- faded_purple = "#6C71C4",
+  --       -- faded_aqua = "#2AA198",
+  --       -- faded_orange = "#D16D00",
+  --       -- dark_red = "#9E2A2F",
+  --       -- light_red = "#F28D8C",
+  --       -- dark_green = "#4B6F44",
+  --       -- light_green = "#A3B76C",
+  --       -- dark_aqua = "#3B3B3B",
+  --       -- light_aqua = "#93A8B2",
+  --       -- gray = "#404040",
+  --     },
+  --   },
+  -- },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      -- or leave it empty to use the default settings
+      transparent = true, -- Enable this to disable setting the background color
+      terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
+      styles = {
+        -- Style to be applied to different syntax groups
+        -- Value is any valid attr-list value for `:help nvim_set_hl`
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = {},
+        variables = {},
+        -- Background styles. Can be "dark", "transparent" or "normal"
+        sidebars = "dark", -- style for sidebars, see below
+        floats = "dark", -- style for floating windows
+      },
+      sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
+      day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+      hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
+      dim_inactive = false, -- dims inactive windows
+      lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
+
+      --- You can override specific color groups to use other groups or a hex color
+      --- function will be called with a ColorScheme table
+      ---@param colors ColorScheme
+      on_colors = function(colors) end,
+
+      --- You can override specific highlights to use other groups or a hex color
+      --- function will be called with a Highlights and ColorScheme table
+      ---@param highlights Highlights
+      ---@param colors ColorScheme
+      -- on_highlights = function(highlights, colors) end,
+      on_highlights = function(hl, palette)
+        hl.NormalFloat = { fg = palette.fg, bg = palette.none }
+      end,
+    },
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      flavour = "frappe", -- latte, frappe, macchiato, mocha
+      background = { -- :h background
+        light = "latte",
+        dark = "mocha",
+      },
+      transparent_background = true, -- disables setting the background color.
+      show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+      term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+      dim_inactive = {
+        enabled = false, -- dims the background color of inactive window
+        shade = "dark",
+        percentage = 0.15, -- percentage of the shade to apply to the inactive window
+      },
+      no_italic = false, -- Force no italic
+      no_bold = false, -- Force no bold
+      no_underline = false, -- Force no underline
+      styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        comments = { "italic" }, -- Change the style of comments
+        conditionals = { "italic" },
+        loops = {},
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+        -- miscs = {}, -- Uncomment to turn off hard-coded styles
+      },
+      color_overrides = {},
+      custom_highlights = {},
+      default_integrations = true,
+      integrations = {
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        treesitter = true,
+        notify = false,
+        mini = {
+          enabled = true,
+          indentscope_color = "green",
+        },
+        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+      },
+    },
+  },
+  { "rebelot/kanagawa.nvim", branch = "master", priority = 1000, opts = {
+    transparent = true,
+  } },
+  {
+    "ellisonleao/gruvbox.nvim",
+    prioneofusionrity = 1000,
+    config = true,
+    opts = {
+      transparent = false,
+    },
+  },
+  -- {
+  --   "zenbones-theme/zenbones.nvim",
+  --   -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+  --   -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+  --   -- In Vim, compat mode is turned on as Lush only works in Neovim.
+  --   dependencies = "rktjmp/lush.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- you can set set configuration options here
+  --   config = function()
+  --     -- vim.g.zenbones_darken_comments = 45
+  --     -- vim.cmd.colorscheme("zenbones")
+  --     vim.g.zenbones_transparent_background = true
+  --   end,
+  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "kanagawa",
+      -- colorscheme = "solarized-osaka",
+    },
+  },
+}
