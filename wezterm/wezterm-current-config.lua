@@ -14,7 +14,7 @@ config.max_fps = 120
 config.term = "xterm-256color" -- Set the terminal type
 
 config.font = wezterm.font("Hack Nerd Font Propo", { weight = "Medium" })
-config.cell_width = 0.9
+config.cell_width = 0.95
 config.window_background_opacity = 0.9
 config.prefer_egl = true
 -- config.font_size = 14.5
@@ -45,6 +45,28 @@ wezterm.on("toggle-colorscheme", function(window, pane)
 	end
 	window:set_config_overrides(overrides)
 end)
+
+-- Event to center the window on startup
+-- wezterm.on("gui-startup", function(cmd)
+-- 	local _, pane, window = wezterm.mux.spawn_window(cmd or {})
+--
+-- 	-- Lấy kích thước màn hình chính
+-- 	local screen = wezterm.gui.screens().active
+-- 	local screen_width = screen.width
+-- 	local screen_height = screen.height
+--
+-- 	-- Đặt kích thước cố định cho cửa sổ
+-- 	local default_width = 1200 -- Điều chỉnh theo nhu cầu của bạn
+-- 	local default_height = 800 -- Điều chỉnh theo nhu cầu của bạn
+--
+-- 	-- Tính toán vị trí để đặt cửa sổ chính giữa
+-- 	local x = math.floor((screen_width - default_width) / 2)
+-- 	local y = math.floor((screen_height - default_height) / 2)
+--
+-- 	-- Đặt kích thước và vị trí cửa sổ
+-- 	window:set_position(x, y)
+-- 	window:set_size(default_width, default_height)
+-- end)
 
 -- keymaps
 config.keys = {
@@ -169,8 +191,11 @@ config.force_reverse_video_cursor = true
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
+
+-- load cái ảnh xong terminal lag vl khuyên là máy yếu không nên bật
 -- config.window_background_image = "C:\\Users\\corcl\\Pictures\\wallhaven-9d1zdd_1600x900.png"
-config.window_background_image = "C:\\Users\\corcl\\Pictures\\viktor.png"
+-- config.window_background_image = "C:\\Users\\corcl\\Pictures\\viktor.png"
+
 config.window_background_image_hsb = {
 	brightness = 0.1,
 }
@@ -180,8 +205,8 @@ bar.apply_to_config(config)
 
 -- tabs
 -- config.hide_tab_bar_if_only_one_tab = true
-config.use_fancy_tab_bar = false
-config.tab_bar_at_bottom = false
+-- config.use_fancy_tab_bar = false
+-- config.tab_bar_at_bottom = false
 
 -- and finally, return the configuration to wezterm
 return config
