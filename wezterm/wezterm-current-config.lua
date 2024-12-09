@@ -20,7 +20,7 @@ config.prefer_egl = true
 -- config.font_size = 14.5
 config.font_size = 13
 config.initial_cols = 122 -- Set the initial width to 120 columns
-config.initial_rows = 30 -- Set the initial height to 30 rows
+config.initial_rows = 32 -- Set the initial height to 30 rows
 
 config.window_padding = {
 	left = 0,
@@ -123,11 +123,11 @@ config.keys = {
 	-- { key = "Tab", mods = "CTRL|SHIFT", action = act.CopyMode("MoveForwardWord") },
 
 	-- copy and paaste
-	{ key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
+	-- { key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
 	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
 
 	-- override "ctrl-shift-x" để không làm gì cả
-	{ key = "X", mods = "CTRL|SHIFT", action = act.DisableDefaultAssignment },
+	-- { key = "X", mods = "CTRL|SHIFT", action = act.DisableDefaultAssignment },
 
 	-- other config
 	{
