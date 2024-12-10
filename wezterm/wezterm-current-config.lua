@@ -168,7 +168,8 @@ config.keys = {
 }
 
 -- For example, changing the color scheme:
-config.color_scheme = "Argonaut"
+-- config.color_scheme = "Argonaut"
+config.color_scheme = "Popping and Locking"
 config.force_reverse_video_cursor = true
 -- config.colors = {
 -- 	foreground = "#dcd7ba",
