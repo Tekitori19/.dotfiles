@@ -100,6 +100,9 @@ config.keys = {
 	},
 	-- { key = "Tab", mods = "CTRL|SHIFT", action = act.CopyMode("MoveForwardWord") },
 
+	-- copy and paste
+	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
+
 	-- other config
 	{
 		key = "E",
