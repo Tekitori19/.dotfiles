@@ -13,14 +13,14 @@ config.front_end = "OpenGL"
 config.max_fps = 120
 config.term = "xterm-256color" -- Set the terminal type
 
-config.font = wezterm.font("Hack Nerd Font Propo", { weight = "Medium" })
+config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
 config.cell_width = 0.95
 config.window_background_opacity = 0.9
 config.prefer_egl = true
 -- config.font_size = 14.5
-config.font_size = 13
+config.font_size = 14
 config.initial_cols = 122 -- Set the initial width to 120 columns
-config.initial_rows = 32 -- Set the initial height to 30 rows
+config.initial_rows = 33 -- Set the initial height to 30 rows
 
 config.window_padding = {
 	left = 0,
@@ -45,28 +45,6 @@ wezterm.on("toggle-colorscheme", function(window, pane)
 	end
 	window:set_config_overrides(overrides)
 end)
-
--- Event to center the window on startup
--- wezterm.on("gui-startup", function(cmd)
--- 	local _, pane, window = wezterm.mux.spawn_window(cmd or {})
---
--- 	-- Lấy kích thước màn hình chính
--- 	local screen = wezterm.gui.screens().active
--- 	local screen_width = screen.width
--- 	local screen_height = screen.height
---
--- 	-- Đặt kích thước cố định cho cửa sổ
--- 	local default_width = 1200 -- Điều chỉnh theo nhu cầu của bạn
--- 	local default_height = 800 -- Điều chỉnh theo nhu cầu của bạn
---
--- 	-- Tính toán vị trí để đặt cửa sổ chính giữa
--- 	local x = math.floor((screen_width - default_width) / 2)
--- 	local y = math.floor((screen_height - default_height) / 2)
---
--- 	-- Đặt kích thước và vị trí cửa sổ
--- 	window:set_position(x, y)
--- 	window:set_size(default_width, default_height)
--- end)
 
 -- keymaps
 config.keys = {
@@ -122,13 +100,6 @@ config.keys = {
 	},
 	-- { key = "Tab", mods = "CTRL|SHIFT", action = act.CopyMode("MoveForwardWord") },
 
-	-- copy and paaste
-	-- { key = "c", mods = "CTRL|SHIFT", action = act.ActivateCopyMode },
-	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
-
-	-- override "ctrl-shift-x" để không làm gì cả
-	-- { key = "X", mods = "CTRL|SHIFT", action = act.DisableDefaultAssignment },
-
 	-- other config
 	{
 		key = "E",
@@ -171,30 +142,12 @@ config.keys = {
 -- config.color_scheme = "Argonaut"
 config.color_scheme = "Popping and Locking"
 config.force_reverse_video_cursor = true
--- config.colors = {
--- 	foreground = "#dcd7ba",
--- 	background = "#1f1f28",
---
--- 	cursor_bg = "#c8c093",
--- 	cursor_fg = "#c8c093",
--- 	cursor_border = "#c8c093",
---
--- 	selection_fg = "#c8c093",
--- 	selection_bg = "#2d4f67",
---
--- 	scrollbar_thumb = "#16161d",
--- 	split = "#16161d",
---
--- 	ansi = { "#090618", "#c34043", "#76946a", "#c0a36e", "#7e9cd8", "#957fb8", "#6a9589", "#c8c093" },
--- 	brights = { "#727169", "#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f", "#dcd7ba" },
--- 	indexed = { [16] = "#ffa066", [17] = "#ff5d62" },
--- }
 
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.window_decorations = "RESIZE" -- "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
 
 -- load cái ảnh xong terminal lag vl khuyên là máy yếu không nên bật
--- config.window_background_image = "C:\\Users\\corcl\\Pictures\\wallhaven-9d1zdd_1600x900.png"
+-- config.window_background_image = "C:\\Users\\corcl\\Pictures\\chill.png"
 -- config.window_background_image = "C:\\Users\\corcl\\Pictures\\viktor.png"
 
 config.window_background_image_hsb = {
