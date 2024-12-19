@@ -15,12 +15,13 @@ config.term = "xterm-256color" -- Set the terminal type
 
 config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
 config.cell_width = 0.95
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0
 config.prefer_egl = true
 -- config.font_size = 14.5
 config.font_size = 14
-config.initial_cols = 122 -- Set the initial width to 120 columns
-config.initial_rows = 33 -- Set the initial height to 30 rows
+config.initial_cols = 120 -- Set the initial width to 120 columns
+config.initial_rows = 30 -- Set the initial height to 30 rows
+config.win32_system_backdrop = "Tabbed"
 
 config.window_padding = {
 	left = 0,
@@ -132,7 +133,7 @@ config.keys = {
 		action = wezterm.action_callback(function(window, _)
 			local overrides = window:get_config_overrides() or {}
 			if overrides.window_background_opacity == 1.0 then
-				overrides.window_background_opacity = 0.9
+				overrides.window_background_opacity = 0 --0.8
 			else
 				overrides.window_background_opacity = 1.0
 			end
