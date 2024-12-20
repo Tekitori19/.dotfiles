@@ -1,7 +1,7 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 local act = wezterm.action
--- local mux = wezterm.mux
+local mux = wezterm.mux
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
@@ -15,13 +15,20 @@ config.term = "xterm-256color" -- Set the terminal type
 
 config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
 config.cell_width = 0.95
-config.window_background_opacity = 0
 config.prefer_egl = true
 -- config.font_size = 14.5
 config.font_size = 14
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
+config.window_background_opacity = 0.5
 config.win32_system_backdrop = "Tabbed"
+
+config.window_background_gradient = {
+	colors = { "#0f0c29", "#302b63", "#24243e" },
+	presets = Turbo,
+	-- Specifies a Linear gradient starting in the top left corner.
+	orientation = { Linear = { angle = -45.0 } },
+}
 
 config.window_padding = {
 	left = 0,
