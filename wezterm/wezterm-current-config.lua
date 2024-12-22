@@ -20,12 +20,12 @@ config.prefer_egl = true
 config.font_size = 14
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
-config.window_background_opacity = 0.5
+config.window_background_opacity = 0.4
 config.win32_system_backdrop = "Tabbed"
 
 config.window_background_gradient = {
-	colors = { "#0f0c29", "#302b63", "#24243e" },
-	presets = Turbo,
+	-- colors = { "#0f0c29", "#302b63", "#24243e" },
+	colors = { "#004d4d", "#006666", "#008080" },
 	-- Specifies a Linear gradient starting in the top left corner.
 	orientation = { Linear = { angle = -45.0 } },
 }
