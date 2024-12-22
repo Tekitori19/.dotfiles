@@ -1885,3 +1885,2737 @@ ii
 z nushell
 ii
 cd
+cls
+z .dot
+git add .
+lazygit
+cls
+z fpt
+z
+y
+ii
+z .dot
+ii
+cls
+z fpt
+y
+ii
+lazygit
+gstat
+cd
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+z fpt
+cd
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi
+z fpt
+cls
+y
+ii
+vi
+cls
+vi
+..
+git clone https://github.com/World-of-Templates/HTMLDesign-eCommerce-Free-Templates.git
+git clone https://github.com/dropways/deskapp.git
+cd HTMLDesign-eCommerce-Free-Templates\
+ll
+cd Eflyer\
+ll
+vi
+z fpt
+y
+ii
+vi
+ii
+..
+cd deskapp\
+bat package.json
+npm install
+pnpm install
+y
+cls
+z 
+cls
+vi
+cls
+z
+vi .wezterm.lua
+cls
+vi
+z
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+z www
+cd shopee-clone\
+lazygit
+D:\
+y
+mix
+mix new
+mix new app
+cd app\
+ll
+y
+cls
+y
+vi
+exit
+alacritty
+cls
+vi
+cls
+y
+cls
+ala
+cls
+z alac
+vi
+z
+z nushell
+y
+alacritty
+z 
+vi
+z nushell
+vi
+y
+vi
+exit
+alacritty
+vi
+cargo install eza
+eza
+eza --help
+eza -TL2
+ll
+eza -TL2
+z fpt
+eza -TL2
+eza
+ls
+trê
+tree
+cls
+ls
+ast
+eza -TL2
+eza -TL
+eza -TL5
+cls
+eza -TL1
+eza -TL2
+eza -TL3
+cls
+ls
+eza
+eza -al
+eza -al --icons
+eza -TL2 --icons
+eza -lTag
+z www
+cd movie-app\
+eza -lTag
+..
+cd shopee-clone\
+eza -lTag
+eza -lTag --level=1
+eza -lTag --level=3
+cls
+eza -TL2 --icons
+eza -lTL2 --icons
+eza -lTLag --icons
+eza -lTag --icons
+z nushell
+z nvim
+vi
+vi
+lta
+z nushell
+z .dot
+vi
+cls
+vi
+lt
+lta
+lt
+lta
+z nushell
+cd
+z neovide
+z nushell
+vi
+z nushell
+lt
+z www
+cd shopee-clone\
+lt
+l
+lt3
+lt 3
+lt
+lt ag
+z www
+lt
+lt 3
+cls
+y
+lt 1
+lt 2
+lt 3
+y
+lt 1
+lt 2
+lt 3
+lt 4
+l2
+z nushell
+vi
+z nushell
+vi
+z D
+D:\
+cls
+lta
+l2
+lta
+y
+lta
+..
+z nushell
+lta
+l2
+lt
+lt3
+lt 3
+z www
+cd shopee-clone\
+lt 3
+lt 3 --header
+l2 --header
+l2
+z www
+cd movie-app\
+l2
+lt
+l2
+z www
+cd shopee-clone\
+z shopee
+l2
+z shopee
+l2
+cls
+z .dot
+lta
+vi
+cls
+exit
+vi
+alacritty
+cls
+lazygit
+cls
+z pic
+y
+cls
+vi
+y
+wsl
+cls
+l2
+ll
+l2
+z gi
+D:\
+z go
+ll
+cd Learn\
+..
+cd Project\
+l2
+z nvim
+l2
+z nvim
+z .dot
+l2
+lta
+bat starship\init.nu
+bat wezterm\wezterm-current-config.lua
+cls
+alacritty
+exit
+vi
+z www
+cd movie-app\
+vi
+z
+z rust
+D:\
+y
+cargo run
+y
+cargo run
+cls
+z www
+cd movie-app\
+bat rest.http
+cls
+z
+z w
+cd
+z
+z fpt
+y
+ii
+z f
+y
+vi
+..
+ll
+l2
+y
+lt 1
+cd BE-Assignment\
+ll
+l2
+l
+z nushell
+vi
+z fpt
+y
+l
+cd `WEB501 - Lập trình ECMAScript\`
+vi
+y
+l
+cd BE-Assignment\
+l2
+cargo add tokio -F full
+cargo add axum
+z fpt
+z w
+cd shopee-clone\
+cargo check
+cargo run
+z w
+cd movie-app\
+z rust
+z fpt
+y
+cargo run
+vi
+cargo run
+vu
+cargo run
+y
+vi
+cls
+vi
+z fpt
+y
+vi
+z fpt
+y
+vi
+z alac
+vi
+z nushell
+y
+vi
+z fpt
+y
+vi
+z nushell
+y
+vi
+z nushell
+y
+z .dot
+mkdir alacritty
+y
+vi
+touch alacritty.toml
+vi
+lazygit
+cls
+z fpt
+cls
+y
+vi
+vi
+cls
+vi
+q
+z
+vi
+vi .wezterm.lua
+cls
+z fpt
+u
+yh
+y
+lt 2
+cls
+l2
+vi
+cls
+z fpt
+y]
+y
+cls
+cargo run
+cls
+cargo ruh
+node test.js\
+cls
+cargo run
+z 
+vi .wezterm.lua
+c;s
+cls
+cargo run
+cls
+cargo run
+clx
+cls
+cargo run
+cls
+vi
+cls
+vi
+cls
+z fpt
+y
+z shopee
+vi
+z
+z shopee
+vi]
+vi
+git branch
+vi
+z
+vi .wezterm.lua
+z shopee
+vi
+z
+z pic
+y
+z
+vi .wezterm.lua
+cls
+cargo add reqwest -F Json
+cargo add reqwest -F json
+z shopee
+cls
+vi
+z
+z .dot
+l
+l2
+i
+l
+cd wezterm\
+y
+vi
+z
+vi .wezterm.lua
+cls
+z 
+vi .wezterm.lua
+cls
+z shopee
+z fpt
+y
+vi
+z pic
+vi
+y
+cls
+vi
+cls
+vi
+cls
+vi
+scoop search tiv
+vi
+cd
+cd /
+cd
+cd Pictures\
+cd ~/
+y
+z pic
+vi
+cls
+chafa ~/Pictures/waifu.png  --format symbols --symbols vhalf --size 60x17 --stretch; sleep .1
+chafa ~/Pictures/waifu.png  --format symbols --symbols vhalf --size 60x17 --stretch
+vi
+exit
+chafa --version
+vi
+y
+vi
+chafa "C:\\Users\\corcl\\Pictures\\mine.jpg" --format symbols --symbols vhalf --size 60x17 --stretch
+chafa C:\\Users\\corcl\\Pictures\\mine.jpg --format symbols --symbols vhalf --size 60x17 --stretch
+vi
+exit
+nu
+cls
+vi
+colorscript -e square
+vi
+z pic
+vi
+y
+vi
+vi]
+y
+vi
+y
+vi
+z
+vi
+z ft
+z fpt
+vi
+z
+vi .wezterm.lua
+vi
+z fpt
+chafa C:\Users\corcl\Pictures\viktor.png --format symbols --symbols vhalf --size 60x17 --stretch
+vi
+config nu
+vi
+y
+vi
+y
+vi
+ii
+cd dinhpdpd09993_lab5\
+node baiLab.js
+node baiTapThem.js
+vi
+exit
+alacritty
+vi
+z .dot
+vi
+z nvim
+lazygit
+git
+lazygit
+z nushell
+vi
+l
+lt
+lt2
+l2
+lta
+z nvim
+lzgit
+cls
+z 
+vi
+cd ..
+vi
+cls
+z fpt
+vi
+y
+vi
+vi]
+vi
+..
+vi
+chafa
+chafa C:\Users\corcl\Pictures\viktor.png --format symbols --symbols vhalf --size 60x17 --stretch
+vi
+chafa ~/Pictures/viktor.png --format symbols --symbols vhalf --size 60x17 --stretch
+vi
+y
+vi
+z nvim
+lzgit
+vi
+cls
+z
+vi .wezterm.lua
+cls
+z fpt
+vi
+z .dot
+z nvim
+ii
+ii
+lzgit
+cls
+vi
+z fpt
+y
+vi
+z Desktop\
+z desk
+git clone https://github.com/geraldarzy/thrifty-frontend.git
+ii
+ll
+git clone https://github.com/geraldarzy/thrifty-frontend.git
+rm -rf thrifty-frontend\
+git clone https://github.com/geraldarzy/thrifty-frontend.git
+git restore --source=HEAD :/
+cd thrifty-frontend\
+ll
+git restore --source=HEAD :/
+git status
+ll
+ii
+cls
+..
+ll
+l
+rm -rf thrifty-frontend\
+ll
+git clone https://github.com/tech2etc/Build-and-Deploy-Ecommerce-Website.git
+cd Build-and-Deploy-Ecommerce-Website\
+ii
+bat README.md
+..
+rm -rf Build-and-Deploy-Ecommerce-Website\
+ll
+l
+z fpt
+y
+ii
+y
+vi
+nvi
+cls
+c
+cl
+z nushell
+vi
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+vi
+z
+vi .wezterm.lua
+cd ~AppData\Local\nvim-data\shada
+cd ~AppData\Local\nvim-data\
+cd ~\AppData\Local\nvim-data\
+yy
+y
+cd
+vi .wezterm.lua
+cls
+vi
+z fpt
+y
+ii
+y
+node baiLab.js
+vi
+y
+ii
+exit
+node baiLab.js
+vi
+z fpt
+y
+cls
+z rust
+y
+cd Project\
+z rust
+cd Project\
+ll
+cd ax
+cd axum_crud\
+bat Cargo.toml
+cargo add dotenv
+cargo install sqlx-cli
+bat Cargo.toml
+z fpt
+y
+z fpt
+y
+vi
+y
+z rust
+cd Project\
+cd axum_crud\
+cargo add anyhow
+cargo install -h
+cargo install --list
+sqlx migrate add init
+vi
+sqlite
+sqlx
+sqlx database
+bat Cargo.toml
+cls
+bat .env
+l
+l2]
+l2
+l 3
+lt3 3
+lt 3
+bat migrations\20231031072458_initial.sql
+bat .env
+sqlx migrate
+sqlx migrate run
+sqlx 
+sqlx database 
+sqlx database create
+sqlx migrate run
+cargo run
+z fpt
+y
+cargo run
+z rust
+y
+vi
+l
+l2 
+bat src\db.rs
+l2
+bat src\rest.rs
+..
+l
+mkdir FE-Assignment
+cd FE-Assignment\
+vi
+npm init -y
+npm install json-server
+ii
+vi
+cargo run
+ii
+z fpt
+y
+z fpt
+y
+z www
+cd shopee-clone\
+vi Framework_Tu_Code\Session.php
+bat Framework_Tu_Code\Session.php
+cls
+ii
+vi
+cls
+z rust
+z fpt
+cd `WEB501 - Lập trình ECMAScript\BE-Assignment\`
+vi
+l
+l2
+l 3
+lt 3
+z
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+z rust
+y
+bat src\rest.rs
+cargo run
+cls
+z rust
+cls
+choco search zellij
+scoop search zellij
+wsl
+cls
+exit
+c;s
+cls
+z fpt
+y
+vi
+cls
+z
+vi .wezterm.lua
+cls
+exit
+alacritty
+cls
+z fpt
+cls
+y
+cls
+..
+cd BE-Assignment\
+lzgit
+git remote add origin https://github.com/Tekitori19/web501-ecma.git
+git branch -M main
+git push -u origin main
+cls
+y
+git clone https://github.com/gitleaks/gitleaks.git
+cd gitleaks\
+make build
+make
+make --version
+bat Makefile
+scoop search make
+scoop install make
+z pic
+make build
+gitleaks
+bat Makefile
+make clean
+make test
+ll
+l2
+bat USERS.md
+z fpt
+y
+cls
+y
+z laragon
+ii
+z shopee
+vi
+lzgit
+z rust
+cargo new actix_app
+cd actix_app\
+cargo run
+z fpt
+y
+z 
+z .dot
+y
+z pic
+vi
+cls
+z fpt
+y
+bat baiTapThem.js
+..
+y
+z 
+vi .wezterm.lua
+z fpt
+y
+ii
+y
+z fpt
+y
+mkdir dinhpdpd09993_lab6
+l
+cd dinhpdpd09993_lab6\
+node main.js
+cls
+node main.js
+node sum_functions.js
+cls
+node sum_functions.js
+vi
+cls
+vi
+cls
+vi
+cls
+vi
+cls
+vi .wezterm.lua
+z .dot
+y
+z nvim
+vi
+z
+vi
+vi .wezterm.lua
+z .dot
+vi
+z nvim
+vi
+z fpt
+y
+vi
+z pic
+ii
+z nvim
+ii .
+z nvim
+ii
+z nvim
+lzgit
+vi
+lzgit
+z nvim
+lzgit
+vi
+vo
+vi
+z nushell
+y
+z
+y
+z rust
+y
+vi
+y]
+y
+vi
+y
+z pic
+y
+z yazi
+z nushell
+..
+cd yazi\
+z yazi
+y
+vi
+y
+z yazi
+vi
+z pic
+y
+vi
+yazi --clear-cache
+vi
+yazi --clear-cache
+y
+yazi --clear-cache
+y
+yazi --clear-cache
+y
+vi
+yazi --clear-cache
+y
+yazi --clear-cache
+y
+yazi --clear-cache
+y
+vi
+yazi --clear-cache
+y
+ya pack -a tkapias/nightfly.yazi
+ya pack -a tkapias/nightfly
+vi
+y
+z
+vi .wezterm.lua
+y
+z pic
+z nushell
+vi
+z pic
+y
+z yazi
+yazi --clear-cache
+y
+yazi --clear-cache
+y
+cls
+z fpt
+y
+z 
+ya pack -a dangooddd/kanagawa
+yazi --clear-cache
+y
+z pic
+y
+z rust
+y
+ya pack -a yazi-rs/flavors:catppuccin-macchiato
+yazi --clear-cache
+y
+yazi --clear-cache
+y
+z pic
+y
+z shopee
+y
+vi
+y
+z shopee
+y
+z yazi
+ii
+z .dot
+ii
+z yazi
+y
+z .dot
+y
+exit
+lzgit
+cls
+y
+cls
+vi
+z .dot
+vi
+cls
+z .dot
+vi
+z .dot
+vi
+nvi
+vi
+vu
+vi
+z nvim
+vi
+jkvi
+vi
+cls
+z fpt
+vi
+cls
+vi
+z pic
+vi
+choco search ueberzug 
+scoop search ueberzug 
+zfpt
+z rust
+l
+cargo install viu
+viu
+z pic 
+viu viktor.png
+vi
+viu viktor.png
+cls
+viu
+viu viktor.png
+TERM_PROGRAM=iTerm viu viktor.png
+viu viktor.png
+vi
+viu
+viu viktor.png
+nvi
+viu viktor.png
+z neovide
+z nushell
+y
+vi
+nvi
+cls
+z fpt
+vi
+nvi
+z shopee
+nvi
+z laragon
+ii
+vi
+z
+vi .wezterm.lua
+z .dot
+y
+vi
+..
+ii
+z nvim
+lzgit
+ii
+z nvim
+..
+lzgit
+z shopee
+nvi
+vi
+nvi
+vi
+lzgit
+nvi
+z shopee
+vi
+z
+z fpt
+y
+vi
+nvi
+vi
+z fpt
+y
+vi
+z fpt
+y
+nvi
+z shopee
+vi
+lzgit
+vi
+ci
+vi
+lzgit
+z nvim
+vi
+z
+vi .wezterm.lua
+z nvim
+vi
+z nvim
+vi
+z fpt
+y
+ii
+npm i
+npm run dev
+vi
+z
+cursor .
+z fpt
+y
+vi
+z desk
+cursor .
+z desk
+cursor .
+vi
+cd C:\tools\neovim\nvim-win64\share/nvim/runtime/lang/
+ii
+vi
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+y
+vi
+y
+vi
+z
+vi
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\main.shada.tmp.X
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+vi
+y
+rm shada\
+rm -rf shada\
+y
+z
+vi
+nvi
+vi
+z alac
+vi
+z
+vi .wezterm.lua
+vi
+cls
+vi
+z laragon
+ii
+z shopee
+vi
+z
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+z shopee
+vi
+z shopee
+vi
+composer require --dev friendsofphp/php-cs-fixer
+tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src
+php-cs-fixer --help
+php-cs-fixer 
+php-cs-fixer fix
+php-cs-fixer fix App\Controllers\
+vi
+lzgit
+ll
+composer require --dev friendsofphp/php-cs-fixer
+composer install
+y
+./vendor/bin/php-cs-fixer
+./vendor/bin/php-cs-fixer fix App\
+vi
+z
+vi
+rm -rf ~\AppData\Local\nvim-data
+scoop search python
+scoop install python
+vi
+cls
+vi
+z shopee
+vi
+lzgit
+git clean
+git clean -f
+lzgit
+git branch
+git reset --hard [HEAD]
+git reset --hard
+lzgit
+vo
+vi
+i
+vi
+lzgit
+vi
+git branch
+git fetch origin split_mvc
+vi
+git branch
+git switch split_mvc
+vi
+git branch
+git reflog
+git checkout cb9b09a
+vi
+z shopee
+vi
+z 
+vi .wezterm.lua
+vi
+z shopee
+vi
+z shopee
+vi
+git config --global core.autocrlf true
+vi
+git reflog
+ec3b220
+git checkout ec3b220
+vi
+./vendor/bin/php-cs-fixer fix App\
+vi
+./vendor/bin/php-cs-fixer fix App\
+vendor/bin/php-cs-fixer --rules=@PSR2
+./vendor/bin/php-cs-fixer fix App\
+php-cs-fixer fix App\
+vi
+php-cs-fixer fix App\
+vendor/bin/php-cs-fixer fix App\
+vi
+vendor/bin/php-cs-fixer fix App\
+vendor/bin/php-cs-fixer fix App\views\
+vi
+vendor/bin/php-cs-fixer fix App\
+vi
+z shopee
+find . -type f -name '*.php' -exec sed -i 's/\r//g' {} +
+find . -name '*.php' | each { |file| open $file --raw | str replace "\r" "" | save $file }
+find . | where name =~ '\.php$' | each { |file| open $file --raw | str replace "\r" "" | save $file }
+find . | where name =~ '\.php$' | each { |file| open $file --raw | str replace "\r" "" | save $file --raw }
+vi
+composer uninstall friendsofphp/php-cs-fixer
+vi
+z shopee
+vi
+lzgit
+y
+lzgit
+z laragon
+ii
+vi
+z nvim
+vi
+lzgit
+z shopee
+composer require phpmailer/phpmailer
+vi
+z rust
+y
+cargo new basic_api
+vi
+cd basic_api\
+cargo run
+vi
+z fpt
+y
+bat note
+vi note
+cd BE-Assignment\
+sqlx migrate run
+sqlx
+sqlx database drop
+sqlx database create
+sqlx migrate run
+cargo run
+l
+l2
+l3
+l 3
+lt 3
+cargo run
+vi
+lzgit
+cargo check
+vi
+cargo run
+y
+cargo run
+vi
+cargo run
+lzgit
+..
+y
+ii
+y
+vi
+y
+cursor .
+npm run dev
+npm i
+npm run dev
+vi
+..
+pnpm install json-server
+npm init -y
+pnpm install json-server
+y
+ii
+bat note
+z fpt
+y
+ii
+z fpt
+y
+node main.js
+z fpt
+y
+ii
+z fpt
+y
+vi
+..
+cargo run
+vi
+l2
+cd src\
+l2
+vi
+..
+cd frontends\
+vi
+..
+vi
+cls
+cargo run
+cargo install
+cargo run
+pnpm run dev
+z laragon
+ii
+z laragon
+ii
+vi
+z shopee
+lzgit
+vi
+lzgit
+cls
+z shopee
+ii
+z fpt
+y
+vi
+..
+ll
+l
+cd test\
+ll
+..
+mkdir coffee
+cd coffee\
+git clone https://github.com/firtman/coffeemasters-vanilla.git
+ll
+cd coffeemasters-vanilla\
+lzg
+z nushell
+vi
+z ft
+z fpt
+y
+lzg
+lzglzg
+lzg
+git pull origin final
+l
+lzg
+..
+rm -rf coffeemasters-vanilla\
+git clone https://github.com/firtman/coffeemasters-vanilla.git
+cd coffeemasters-vanilla\
+git cb new
+git checkout -b new
+git fetch origin final
+lzgit
+lzg
+vi
+ii
+git fetch origin final
+git branch
+git pull origin final
+..
+rm -rf coffeemasters-vanilla\
+git clone https://github.com/firtman/coffeemasters-vanilla.git
+cd coffeemasters-vanilla\
+git checkout -b new
+git rebase final
+git rebase origin final
+git reset --hard origin/new
+git reset --hard origin/final
+vi
+ii
+git fetch origin final
+git reset --hard origin/final
+ii
+vi
+git pull origin final --rebase
+ii
+cursor .
+vi
+git pull origin final --rebase
+git branch -D new
+git switch main
+git branch -D new
+git fetch origin final
+git branch
+vi
+git fetch origin/final
+git fetch final
+git checkout --orphan new-branch-name
+l
+git rm -rf .
+l
+git fetch final
+git fetch orgin
+git fetch origin
+l
+git fetch origin final
+l
+vi
+git fetch origin final
+git fetch origin/final
+git remote add origin https://github.com/firtman/coffeemasters-vanilla.git
+git fetch origin/final
+git fetch origin\final
+git fetch origin final
+ll
+git pull origin final --rebase
+git pull origin final
+l
+..
+y
+vi
+ii
+..
+ii
+cd coffeemasters-vanilla\
+vi
+cargo run
+node
+node test.js
+ii
+vi
+ii
+lzg
+lzgit
+lzg
+y
+lzg
+z fpt
+y
+vi
+ii
+vi
+z laragon
+ii
+z fpt
+z shopee
+lzg
+z
+vi
+lzg
+vi
+vi .wezterm.lua
+cls
+vi
+z fpt
+y
+vi
+lzg
+..
+vi
+..
+vi
+lzg
+scoop search locate
+choco search locate
+wsl --list
+wsl --help
+wsl
+wsl --list
+vi
+cls
+z fpt
+y
+ii
+y
+z fpt
+y
+lzg
+vi
+y
+vi
+exit
+vi
+alacritty
+vi
+z go
+vi
+z rust
+ll
+cd Project\
+ll
+cd axum_crud\
+vi
+choco upgrade neovim
+vi
+z rust
+y
+vi
+exit
+vi
+exit
+z pic 
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+y
+vi
+y
+rm -rf shada\
+ll
+y
+vi
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+vi
+z nvim
+vi
+ll
+vi init.lua
+vi
+nvi
+vi
+nvi
+vi
+nvi
+vi
+nvi
+vi
+z
+vi .wezterm.lua
+z nvim
+vi
+ala
+z fpt
+z rust
+y
+z rust
+y
+vi\
+vi
+nvi
+vi
+vi 
+vi
+z rust
+y
+vi
+nvi
+z fpt
+y
+vi
+nvi
+ii
+y
+vi
+z fpt
+z laragon
+z shopee
+lzg
+z laragon
+ii
+vi
+nvi
+vi
+z shopee
+vi
+alacritty
+z nvim
+vi
+nvi
+z shopee
+nvi
+vi
+z shopee
+nvi
+z laragon
+ii
+z shopee
+vi
+which wezterm
+which neovide
+vi .wezterm.lua
+nvi .wezterm.lua
+vi
+nvi
+scoop list
+z fpt
+y
+cursor .
+vi
+..
+cargo run
+vi
+exit
+z fpt
+y
+cursor .
+..
+vi
+y
+vi
+pip3 install ansible
+vi
+ansible
+ansible -v
+pip3 list
+pip3 uninstall ansible
+pip3 list
+pip3 uninstall ansible-core
+pip3 list
+nvi
+vi
+nvi
+z .dot
+touch REAMDME.md
+vi REAMDME.md
+vi
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+vi
+exit
+wsl
+vi
+exit
+he
+choco search helix
+choco install helix
+he
+helix
+helix -v
+choco install helix
+hx
+z nvim
+hx
+vi
+nvi
+vi
+z fpt
+y
+node test.js
+vi
+y
+vi
+bat note.md
+bat frontends\data\menu.json
+vi
+vi frontends\data\menu.json
+vi
+vi frontends\data\menu.json
+y
+ll
+y
+npm install -g json-server
+ii
+json-server --watch db.json --port 3000
+npm i
+npm run dev & npm run server
+vi
+json-server --watch db.json --port 3000
+i
+z fpt
+y
+cargo run
+vi
+y
+sqlite
+sqlite3
+cls
+vi
+y
+rm -rf test\
+vi
+l 1
+l 2
+l2
+ll
+..
+ll
+l2
+l 1
+lt 1
+cd project\
+lt 1
+..
+rm project\
+rm -rf project\
+..
+y
+npm i
+npm init -y
+npm i
+vi
+ii
+npm run dev
+ll
+y
+vi package.json
+y
+lzg
+y
+hx
+..
+y
+lzg
+cls
+cargo run
+vi
+nvi
+vi
+nvi
+vi
+y
+l2
+lt 3
+lta
+z
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+ll
+vi
+..
+rm -rf shada\
+z
+vi .wezterm.lua
+cls
+wsl -l -v
+wsl --unregister NixOS
+cls
+wsl -l -v
+c;s
+cls
+vi
+nvi
+vi
+z
+vi .wezterm.lua
+vi
+nvi
+vi .wezterm.lua
+vi
+z shopee
+vi
+cls
+z
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+cls
+z .dot
+y
+vi
+..
+lzg
+z
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+z pic 
+y
+cls
+ansible -v
+vi
+z pic 
+vi
+vi .wezterm.lua
+z fpt
+z shopee
+z laragon
+ii
+lzg
+vi
+composer require guzzlehttp/guzzle
+vi
+ii
+z
+vi 
+lzg
+git push origin -d a_mien
+git push origin -d forget
+vi
+cls
+z
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+z .dot
+lzg
+vi
+l2
+l
+z nushell
+la
+vi
+z nushell
+vi
+l 1
+l 3
+l 5
+la
+z
+l 1
+l
+l 1
+z nushell
+vi
+l1
+l 1
+l 2
+l 3
+z
+l1
+l 1
+la
+l 3
+y
+cd Downloads\
+z down
+ll
+z
+vi
+vi .wezterm.lua
+vi .wezterm.lua
+choco list
+choco upgrade neovim
+choco upgrade yazi
+z fpt
+y
+cargo run
+vi
+cargo run
+y
+npm run dev
+l 3
+cls
+lzg
+z shopee
+podman info
+podman version
+choco search podman
+l
+la
+cls
+l 3
+l 2
+cls
+z 
+z
+z shopee
+touch docker-compose.yaml
+vi
+podman compose up
+podman machine init
+podman run ubi8-micro date
+podman images
+podman images --help
+pip3 install podman-compose
+podman compose up
+podman-compose up
+cls
+podman-compose up
+podman pod ps
+podman pod rm pod_shopee-clone
+podman-compose up
+podman pod ps
+podman pod rm 04c45e173f21
+podman pod ps
+podman pod ps -la
+podman pod ps -a
+podman pod ps -l
+podman pod ps -ls
+docker compose up
+cls
+pip3 list
+pip3 uninstall podman-compose
+pip3 install podman-compose --user
+podman-compose up
+exit
+podman-compose up
+pip3 install podman-compose --user
+podman-compose up --user
+pip3 uninstall podman-compose --user
+pip3 uninstall podman-compose
+python.exe -m pip install --upgrade pip
+pip3 install podman-compose
+podman-compose --version
+podman-compose up
+cls
+pip3 uninstall podman-compose
+pip3 list
+wsl
+cls
+cat ./database_design/shopapp.sql
+cls
+vi
+lzg
+z shopee
+vi
+cls
+lta
+la
+cls
+l 3
+l 2
+cls
+l 1
+l 2
+cls
+z
+vi .wezterm.lua
+z shopee
+l 2
+z
+vi .wezterm.lua
+z shopee
+cls
+l 3
+l 2
+z nushell
+eza --icons -lTL2
+eza --icons -lT2
+eza --icons -lT 2
+eza --icons -lTL2
+eza --icons -TL2
+rm -rf uploads\
+eza --icons -TL2
+cd App
+eza --icons -TL2
+..
+eza --icons -TL1
+vi
+lzg
+vi
+lzg
+vi
+y
+vi test
+y
+z yazi
+vo
+vi
+y
+z shopee
+y
+z yazi
+vi
+y
+z shopee
+y
+vi
+lzg
+vi .wezterm.lua
+z shopee
+vi .wezterm.lua
+z
+vi .wezterm.lua
+exit
+vi
+cls
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+z fpt
+y
+vi
+z
+vi .wezterm.lua
+winget install -e --id raphamorim.rio
+cls
+vi
+vi .wezterm.lua
+rio
+z rio
+z nushell
+y
+rio
+z alac
+rio
+vi
+z
+vi
+z rio
+z pic
+y
+pip install imgcat
+y
+imgcat chill.png
+z pic
+y
+z
+cls
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+'|, . ,'     RAM 9.0 GiB / 23.9 GiB
+cls
+vi .wezterm.lua
+z .dot
+vi
+z
+vi .wezterm.lua
+z shopee
+lzg
+z fpt
+y
+z
+vi .wezterm.lua
+exit
+z
+z fpt
+y
+vi
+exit
+npm run dev
+cargo run
+cls
+vi .wezterm.lua
+cls
+z fpt
+y
+z
+z .dot
+lzg
+cls
+vi .wezterm.lua
+cls
+z
+cls
+vi .wezterm.lua
+z .dot
+vi
+cls
+z
+cls
+z rio
+vi
+z
+z
+vi .wezterm.lua
+vi .wezterm.lua
+z rio
+vi
+z
+vi .wezterm.lua
+cls
+z rio
+vi .wezterm.lua
+y
+z
+vi
+exit
+z
+vi .wezterm.lua
+exit
+z alac
+vi
+z
+vi .wezterm.lua
+exit
+alacritty
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+z fpt
+y
+cargo run
+npm run dev
+cls
+z rust
+y
+z
+z pic
+y
+vi .wezterm.lua
+z fpy
+z fpt
+y
+z
+vi .wezterm.lua
+cls
+vi
+z nvim
+vi
+lzg
+z
+vi .wezterm.lua
+vi
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+z rust
+y
+z
+z rust
+y
+nvi
+vi
+z
+vi .wezterm.lua
+cls
+z node
+z go
+y
+z go
+z rust
+y
+z go
+y
+z node
+y
+z golang
+vi .wezterm.lua
+z .dot
+z rust
+y
+z golang
+z .dot
+vi
+exit
+z shopee
+wsl
+vi .wezterm.lua
+z shopee
+z laragon
+ii
+vi
+z node
+cls
+y
+vi
+ll
+mkdir client
+cd client\
+pn i
+pnpm i
+cls
+ll
+rm -rf vite-project\
+..
+rm -rf client\
+pnpm create vite
+cd client\
+mkdir posts
+cd posts\
+pnpm initt -y
+pnpm init -y
+pnpm init --help
+pnpm init --yes
+pnpm install
+pnpm help init
+pnpm init
+pnpm install express cors axios nodemon
+..
+mkdir comments & cd comments
+ll
+cls
+l 1
+cd comments\
+ll
+l 1
+cls
+pnpm install express cors axios nodemon
+ll
+y
+pnpm init
+pnpm install express cors axios nodemon
+..
+l 1
+l
+l 1
+l1
+l2
+l3
+l 3
+cls
+l1
+l2
+ll
+y
+z pic
+git init
+lzg
+y
+cls
+cursor .
+node
+cls
+choco list
+choco list
+vi
+cls
+vi
+cls
+z nvim
+vi
+nvi
+vi
+nvi
+cls
+vi
+cls
+vi
+cls
+y
+z
+cls
+y
+vi
+z rust
+vi
+z golang
+vi
+y
+which go
+cls
+y
+vi
+z react
+y
+z react
+y
+z react
+y
+cls
+choco search mongodb
+scoop search mongo
+scoop search mongodb
+scoop install mongodb
+mongod
+cls
+mongo
+cls
+z golang
+y
+cursor .
+y
+vi
+go doc
+cls
+go doc fmt
+godoc -http=:8001
+cls
+la
+cls
+z nushell
+z golang
+vi
+y
+vi
+cls
+y
+vi
+z golang
+cls
+vi
+y
+cls
+y
+cls
+prompt --continuation
+scoop list
+scoop upgrade starship
+scoop update starship
+cd C:\Users\corcl\scoop\apps\starship\current\
+y
+cls
+z golang
+vi
+z golang
+y
+ii
+y
+ii
+choco search monaspace
+which go
+go -v
+choco install monaspace
+go version
+y
+z
+vi .wezterm.lua
+vi
+cls
+vu
+z
+vi .wezterm.lua
+cls
+z 
+vi .wezterm.lua
+cls
+vi
+cls
+z
+vi .wezterm.lua
+vi
+vi .wezterm.lua
+z .dot
+vi
+z
+vi .wezterm.lua
+cls
+z 
+vi .wezterm.lua
+z .dot
+vi
+z
+vi .wezterm.lua
+z .dot
+vi wezterm\wezterm-current-config.lua
+z golang
+y
+vi
+z
+z golang
+vi
+y
+vo
+vi
+lzg
+git config --global --add safe.directory D:/Golang/Project/Snippetbox
+lzg
+make web
+go version
+cls
+make web
+vi
+cls
+vi
+cls
+z rust
+y
+cargo new upload_file_app
+y
+cargo run
+y
+cargo new twitter_rust
+make web
+y
+make web
+vi
+y
+cargo new rust_game
+cd rust_game\
+cargo run
+cargo search zelij
+cargo search slotmap
+cargo search zellij
+cls
+cargo run
+cls
+cr
+m
+cls
+cargo run
+cls
+cargo run
+vi
+vi
+cls
+vi
+z nushell
+c 
+ca
+vi
+c run
+g
+z nushell
+vi
+l
+no 
+n
+cls
+n
+z golang
+y
+vi
+choco list
+choco upgrade yazi
+y
+z pic
+y
+cls
+z golang
+y
+m web
+cls
+vi
+cls
+z
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+exit
+alacritty
+vi .wezterm.lua
+cls
+z golang
+y
+vi
+cls
+z rust
+y
+c run
+vi
+y
+c run
+vi
+cls
+y
+rm -rf twitter_rust\
+git clone https://github.com/jayson-lennon/ztm-project-uchat.git
+y
+cls
+c run -p project-init
+choco search trunk
+npm install -D @trunkio/launcher
+choco search trunk
+c run -p project-init
+y
+c run -p project-init
+npm uninstall -D @trunkio/launcher
+cargo binstall trunk
+cargo install trunk --locked
+cd C:\Users\corcl\AppData\Local\Temp\
+y
+z rust
+y
+c run -p project-init
+choco search psql
+choco install psql
+vi
+c run -p project-init
+cargo binstall trunk
+c run -p project-init
+cargo binstall diesel_cli
+c run -p project-init
+cls
+just --version
+vi
+cls
+just serve-frontend
+just init
+which just
+just init
+c run -p project-init
+just init
+exit
+nu
+just init
+just serve-frontend
+cargo build --target=wasm32-unknown-unknown --manifest-path D:\Rust\Project\ztm-project-uchat\frontend\Cargo.toml
+cargo update
+just serve-frontend
+cargo update -p time
+cargo update -p time@0.3.20
+just serve-frontend
+cargo update -p time
+cargo update -p time@0.1.45
+just serve-frontend
+cargo update -p time@0.3.20
+cargo update -p time@0.3.26
+cargo update -p time@0.3.2
+rustup update
+just serve-frontend
+cargo update
+z
+cargo update
+rust --version
+rustc --version
+cargo update -p time
+just serve-frontend
+pwsh
+cargo build --future-incompat-report
+just serve-frontend
+sh
+bash
+cls
+just serve-frontend
+pwsh
+wsl
+sh
+bash
+git bash
+which bash
+which git-bash
+which git-bash.exe
+which git-cmd.exe
+just serve-frontend
+cargo build --future-incompat-report
+sh --version
+just serve-frontend
+cargo update
+cargo update D:\Rust\Project\ztm-project-uchat\frontend
+cargo clean
+vi
+z golang
+y
+vi
+cls
+z
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+vi
+z golang
+y
+vi
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+y
+z golang
+y
+vi
+z 
+vi .wezterm.lua
+cls
+z .dot
+lzg
+z
+vi
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+y
+vi
+cls
+z
+cls
+vi
+z golang
+y
+z yazi
+y
+vi
+y
+z golang
+y
+cls
+z nushell
+vi
+lz
+z golang
+y
+G:\
+y
+ii
+z golang
+y
+vi
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+sqlc\
+sqlc
+cls
+y
+vi .wezterm.lua
+cls
+vi .wezterm.lua
+cls
+~
+❯ :
+cls
+choco search mux
+z nushell
+nv
+vi
+v
+z
+v .wezterm.lua
+cls
+v .wezterm.lua
+cls
+v .wezterm.lua
+cls
+v .wezterm.lua
+z .dot
+vi
+cls
+z neovide
+z
+vi
+v
+z
+v .wezterm.lua
+cls
+v
+z golang
+v
+vi
+v
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+y
+z golang
+v
+z nvim
+y
+v
+cd C:\Users\corcl\AppData\Local\nvim-data\shada\
+y
+ii
+z nvim
+v
+vi
+v
+pwsh
+v
+z nushell
+no
+exit
+no
+exit
+no
+exit
+v
+npm install -g n
+npm list
+curl cht.sh
+curl cht.sh/npm
+npm list --global --depth=0
+curl cht.sh/
+curl cht.sh/zig
+curl cht.sh/choco
+curl cht.sh
+curl cht.sh/go/Interfaces
+curl cht.sh/yazi
+curl cht.sh/az
+cht
+wsl
+scoop install cht
+cht
+scoop uninstall cht
+cht
+cht.nu
+cht
+cht go
+cht.nu
+nu cht.nu
+http get cht.sh
+nu cht.nu
+less
+nu cht.nu
+cls
+curl cht.sh/go
+nu cht.nu
+nu cht.nu -l
+cls
+v
+cht
+cls
+http get cht.sh]
+http get "cht.sh"
+http get "https://cht.sh"
+cls
+cht
+cht]
+cht
+cht -l
+cht
+curl cht.sh/go
+which less
+y
+less cht.nu
+bat cht.nu
+y
+z golang
+y
+less main.go
+cht
+curl cht.sh/go-mod/learn
+cht
+curl cht.sh/go-mod/:learn
+cht
+cht -l
+cht
+v
+cht
+cht -l
+cht
+cht -l
+cht
+curl cht.sh/7z
+curl cht.sh/7z | bat
+cht
+cls
+z react
+y
+v .wezterm.lua
+curl cht.sh/react
+curl cht.sh/angular
+curl cht.sh/
+cls
+curl cht.sh/scss
+curl cht.sh/sass
+curl cht.sh/sass |bat
+curl cht.sh/sass/:learn | bat
+curl cht.sh/sass/:all | bat
+z nushell
+cht
+ll
+cheat.sh
+v .wezterm.lua
+cls
+v
+cls
+v
+z react
+y
+v
+v
+z
+v .wezterm.lua
+cls
+choco search cdk
+v
+z
+v .wezterm.lua
+v
+v .wezterm.lua
+z .dot
+z nushell
+v
+ii
+z nushell
+ii

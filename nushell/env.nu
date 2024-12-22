@@ -126,5 +126,34 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
+def cht [@args] {
+    mut topic_constraint = "none"
+
+    for $arg in @args {
+        if $arg in ["l", "lang"] {
+            $topic_constraint = "lang"
+        }
+    }
+
+    let topic = if $topic_constraint == "lang" {
+        echo "go\nrust\nc" | fzf
+    } else {
+        http get "https://cht.sh/:list" | lines | fzf
+    }
+
+    if $topic == "" {
+        exit 0
+    }
+
+    let sheet = (http get $"https://cht.sh/($topic)/:list" | lines | fzf)
+
+    if $sheet == "" {
+        http get $"https://cht.sh/($topic)?style=rrt" | less
+        exit 0
+    }
+
+    http get $"https://cht.sh/($topic)/($sheet)?style=rrt" | less
+}
+
 zoxide init nushell | save -f ~/.zoxide.nu
 show_banner

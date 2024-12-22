@@ -897,12 +897,20 @@ $env.config = {
     ]
 }
 
-alias vi = nvim
-alias nvi = neovide
+alias v = nvim
+alias vi = neovide
 alias ll = ls -l
 alias ii = explorer .
 alias la = eza -lTag --header --hyperlink --git --icons
+alias l3 = eza -lTL3 --header --hyperlink --git --icons
 alias l2 = eza -lTL2 --header --hyperlink --git --icons
+alias l1 = eza -lTL1 --header --hyperlink --git --icons
 alias l = eza --icons --header --hyperlink --git -lTL
+alias cht = nu cht.nu
+alias lz = lazygit
+alias m = make
+alias c = cargo
+alias g = go
+alias no = node
 use ~/.cache/starship/init.nu
 source ~/.zoxide.nu
