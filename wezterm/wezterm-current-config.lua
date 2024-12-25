@@ -17,9 +17,9 @@ config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
 config.cell_width = 0.95
 config.prefer_egl = true
 -- config.font_size = 14.5
-config.font_size = 14
-config.initial_cols = 120 -- Set the initial width to 120 columns
-config.initial_rows = 30 -- Set the initial height to 30 rows
+config.font_size = 16
+-- config.initial_cols = 120 -- Set the initial width to 120 columns
+-- config.initial_rows = 30 -- Set the initial height to 30 rows
 config.window_background_opacity = 0.4
 config.win32_system_backdrop = "Tabbed"
 
