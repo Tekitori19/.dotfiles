@@ -16,19 +16,18 @@ config.term = "xterm-256color" -- Set the terminal type
 config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
 config.cell_width = 0.95
 config.prefer_egl = true
--- config.font_size = 14.5
-config.font_size = 16
--- config.initial_cols = 120 -- Set the initial width to 120 columns
--- config.initial_rows = 30 -- Set the initial height to 30 rows
-config.window_background_opacity = 0.4
-config.win32_system_backdrop = "Tabbed"
+config.font_size = 14
+-- config.font_size = 16
+config.initial_cols = 120 -- Set the initial width to 120 columns
+config.initial_rows = 30 -- Set the initial height to 30 rows
 
-config.window_background_gradient = {
-	-- colors = { "#0f0c29", "#302b63", "#24243e" },
-	colors = { "#004d4d", "#006666", "#008080" },
-	-- Specifies a Linear gradient starting in the top left corner.
-	orientation = { Linear = { angle = -45.0 } },
-}
+config.window_background_opacity = 0.8
+-- config.win32_system_backdrop = "Tabbed"
+-- config.window_background_gradient = {
+-- 	colors = { "#0f0c29", "#302b63", "#24243e" },
+-- 	-- colors = { "#004d4d", "#006666", "#008080" },
+-- 	orientation = { Linear = { angle = -45.0 } },
+-- }
 
 config.window_padding = {
 	left = 0,
@@ -38,8 +37,8 @@ config.window_padding = {
 }
 
 config.inactive_pane_hsb = {
-	saturation = 0.0,
-	brightness = 0.3,
+	saturation = 1.2,
+	brightness = 0.25,
 }
 
 -- color scheme toggling
@@ -159,7 +158,7 @@ config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu
 
 -- load cái ảnh xong terminal lag vl khuyên là máy yếu không nên bật
 -- config.window_background_image = "C:\\Users\\corcl\\Pictures\\chill.png"
--- config.window_background_image = "C:\\Users\\corcl\\Pictures\\viktor.png"
+-- config.window_background_image = "C:\\Users\\corcl\\Pictures\\guts.png"
 
 config.window_background_image_hsb = {
 	brightness = 0.1,
