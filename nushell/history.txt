@@ -132,7 +132,6 @@ cls
 wsl
 cls
 ll
-ws;
 wsl
 z nushell
 z nvim
@@ -4618,4 +4617,821 @@ z nushell
 v
 ii
 z nushell
+ii
+lz
+z node
+y
+pnpm init
+z shopee
+l
+l1
+ll
+l2
+l1
+v
+v
+z shopee
+v
+lz
+v
+z golang
+y
+make web
+v
+z node
+choco list
+choco upgrade neovim
+y
+z shopee
+v
+exit
+alacritty
+curl ascii.live/rick
+v
+curl ascii.live/rick
+z node
+y
+z node
+curl ascii.live/parrot
+curl parrot.live
+z node
+y
+z
+v .wezterm.lua
+z .dot
+v
+cls
+curl ascii.live/parrot
+cls
+curl ascii.live/forest
+curl ascii.live/batman
+curl ascii.live/knot
+curl ascii.live/time
+curl ascii.live/time.go
+curl ascii.live/nebulaehes
+curl ascii.live/nyan
+curl ascii.live/rick
+curl ascii.live/spidyswing
+cls
+curl ascii.live/playstation
+curl ascii.live/coin
+curl ascii.live/dvd
+curl ascii.live/donut
+curl ascii.live/frames
+curl ascii.live/batman&robin
+curl ascii.live/donut
+curl ascii.live/parrot
+curl ascii.live/dvd
+curl parrot.live
+cls
+cl
+cls
+z nushell
+v
+z node
+y
+ii
+v
+wsl
+y
+v
+choco upgrade neovim
+nvim -v
+v
+scoop list
+scoop update neovide
+cls
+vi
+z .dot
+y
+v
+cls
+lz
+winget install CommandLine.Wave
+wsh
+winget list
+winget uninstall raphamorim.rio
+cls
+v
+y
+z nvim
+y
+wsh editconfig
+y
+v
+z
+v .wezterm.lua
+cls
+wsh editconfig
+v .wezterm.lua
+v
+v .wezterm.lua
+y
+z nvim
+viu viktor.png
+clear
+z pic
+wsh preview
+wsh file
+wsh --help
+wsh editconfig
+wsh --help
+wsh file
+cls
+y
+wsh view Downloads\
+v .wezterm.lua
+v
+z rust
+y
+v
+cls
+v
+cls
+y
+bat Makefile
+curl parrot.live
+curl ascii.live/parrot
+curl parrot.live
+v .wezterm.lua
+z rust
+y
+cargo run
+c run
+v
+z 
+z .dot
+y
+lz
+v
+c clean
+v .wezterm.lua
+winget list
+v .wezterm.lua
+exit
+alacritty
+v .wezterm.lua
+z pic
+y
+viu viktor.png
+y
+viu chillies.png
+y
+v
+npm install --global carbonyl
+carbonyl https
+carbonyl https://youtube.vn
+carbonyl https://www.youtube.vn
+npm uninstall --global carbonyl
+cls
+z
+v
+podman run --rm -ti fathyb/carbonyl https://youtube.com
+z react
+y
+pnpm run dev
+y
+pnpm i
+y
+pnpm i
+bat package.json
+podman run --rm -ti fathyb/carbonyl https://youtube.com
+podman run --rm -ti fathyb/carbonyl localhost:4200
+pnpm run start
+z rust
+y
+podman run --rm -ti fathyb/carbonyl https://youtube.com
+ppodman run --rm -ti fathyb/carbonyl https://youtube.com
+podman run --rm -ti fathyb/carbonyl https://youtube.com
+z pic
+y
+v
+cls
+z
+v .wezterm.lua
+v
+v .wezterm.lua
+z golang
+y
+v
+cls
+docker run -it browsh/browsh
+v
+z
+v .wezterm.lua
+z react
+y
+podman run -it browsh/browsh
+cls
+pnpm run dev
+z
+v .wezterm.lua
+cls
+z react
+v
+z
+v .wezterm.lua
+z react
+G:\
+ii
+z react
+C:\
+y
+choco install gdu
+gdu
+v
+npm cache clean --force
+gdu
+scoop list
+scoop uninstall elixir
+scoop uninstall erlang
+gdu
+v
+v
+v .wezterm.lua
+exit
+curl cht.sh/odin | bat
+curl cht.sh/golang | bat
+curl cht.sh/go | bat
+cls
+z react
+y
+curl cht.sh
+cls
+v
+scoop search redis
+z node
+y
+v
+y
+git clone https://github.com/Tekitori19/udemy-clone.git
+y
+v
+y
+v
+cls
+lz
+v
+exit
+v
+E:\
+y
+ii
+y
+ii
+y
+ii
+v
+vi
+v
+c;s
+cls
+v
+scoop install zig
+scoop list
+zig version
+scoop uninstall zig
+scoop list
+cmd
+cls
+scoop search redis
+scoop search odin
+scoop install odin
+odin
+odin -v
+odin
+odin run
+D:\
+y
+z golang
+y
+odin run .
+scoop install odin
+scoop search odin
+scoop install odin
+v
+scoop bucket add versions
+scoop install versions/odin
+scoop bucket add versions
+scoop install versions/odin
+v
+pwsh
+v
+scoop update
+git config --global --add safe.directory C:/Users/corcl/scoop/buckets/main
+git config --global --add safe.directory C:/Users/corcl/scoop/buckets/extras
+git config --global --add safe.directory C:/Users/corcl/scoop/buckets/main
+git config --global --add safe.directory C:/Users/corcl/scoop/buckets/extras
+scoop update
+scoop bucket add versions
+scoop update scoop
+cls
+z golang
+z nvim
+v
+cls
+scoop install versions/odin
+odin run .
+y
+odin run main
+x
+z
+v
+scoop uninstall versions/odin
+scoop install versions/odin
+v
+scoop uninstall versions/odin
+z
+y
+z react
+y
+pnpm init
+pnpm i react react-dom next
+v
+cls
+l1
+z angular
+y
+npm list --global --depth=0
+v
+choco install ffmpeg-full
+z pic
+y
+z
+choco install zig
+zig
+v
+z golang
+./main.exe
+zig build-exe main.zig
+./main.exe
+v
+y
+zig build-exe main.zig
+./main.exe
+v
+y
+npm list --global --depth=0
+z glaze
+y
+v
+cls
+z angular
+y
+z angular
+z
+ng serve
+cls
+z angular
+v
+cursor .
+ng serve
+v
+cls
+v
+z golang
+y
+zig
+zig init -h
+zig init
+l
+l1
+v
+zig build-exe
+z rust
+z
+v .wezterm.lua
+z rust
+v
+z nvim
+viu viktor.png
+z
+v .wezterm.lua
+cls
+v .wezterm.lua
+z pic
+ii
+v
+z
+v .wezterm.lua
+z pic
+ỵ
+y
+cls
+v
+z fpt
+y
+v
+y
+cls
+y
+z react
+y
+v
+y
+git clone https://github.com/WebDevSimplified/React-Simplified-Beginner-Projects.git
+git clone https://github.com/WebDevSimplified/React-Simplified-Advanced-Projects.git
+git clone https://github.com/WebDevSimplified/react-folder-structure.git
+y
+ii
+pnpm create vite
+pnpm i
+pnpm run dev
+cls
+v
+z
+v .wezterm.lua
+v .wezterm.lua
+z
+c clean
+v .wezterm.lua
+v
+cls
+z pic
+y
+D:\
+y
+gdu
+z rust
+t
+y
+v
+cls
+choco list
+choco upgrade helix
+z rust
+y
+v
+z
+z desk
+y
+z pic
+y
+z
+v .wezterm.lua
+v
+z nvim
+v
+scoop update neovide
+vi
+s
+cls
+z fpt
+y
+v
+y
+git init
+git commit -m "batman"
+git add .
+git commit -m "batman"
+git branch -M main
+git remote add origin https://github.com/Tekitori19/nodejs-web503.git
+git push -u origin main
+lz
+toucch Readme.md
+touch Readme.md
+lz
+y
+lz
+scoop update nodejs
+choco list
+z fpt
+choco upgrade nodejs
+y
+pnpm init
+bat package.json
+npm --v
+node -v
+y
+mkdir
+npm install --global tsnode
+npm install --global ts-node
+pnpm run dev
+cd lab1
+pnpm run dev
+npm install -g typescript
+pnpm install --global ts-node
+pnpm run dev
+ts-node server.ts
+pnpm list --global --depth=0
+npm list --global --depth=0
+npm uninstall --global ts-node
+npm list --global --depth=0
+npm uninstall --global typescript
+npm list --global --depth=0
+pnpm list --global --depth=0
+pnpm install -g typescript
+pnpm install express
+pnpm i -D @types/node
+npm install @types/express --save-dev
+pnpm i @types/express -D
+v
+lz
+pnpm run dev
+cd lab1
+pnpm run dev
+exit
+exit
+pnpm run dev
+cd lab1
+pnpm run dev
+pnpm run dev
+ts-node
+pnpm run dev
+ts-node server.ts
+pnpm list --global --depth=0
+pnpm start
+pnpm run dev
+pnpm i
+pnpm run dev
+pnpm i -D tsx
+pnpm uninstall -D tsx
+pnpm i -D ts-node
+pnpm run dev
+pnpm uninstall -D ts-node
+pnpm i -D tsx
+pnpm run dev
+pnpm i -D nodemon
+pnpm run dev
+pnpm uninstall -D nodemon
+pnpm run dev
+cls
+exit
+pnpm run dev
+cls
+v
+cls
+lz
+y
+v
+lz
+v
+y
+cls
+y
+ii
+lz
+pnpm list --global --depth=0
+pnpm uninstall ts-node -G
+pnpm uninstall ts-node --global
+pnpm i tsx --global
+pnpm list --global --depth=0
+z fpt
+y
+alacritty
+cls
+y
+tsx test.ts
+tsc --version
+v
+rm -rf test.ts
+y
+pnpm init
+tsc --init
+tsc
+tsx test.ts
+tsx src\index.ts
+tsc
+pnpm run dev
+v
+y
+z fpt
+y
+git init
+lz
+git branch -M main
+git config --global --add safe.directory 'D:/FPT/WEB502 -  Lập trình TypeScript/Nộp lab'
+git branch -M main
+git remote add origin https://github.com/Tekitori19/typescript-web502.git
+lz
+v
+y
+bat dinhpdpd09993_WEB503_lab1.txt
+v
+ii
+z fpt
+y
+v
+z golang
+y
+v
+z nvim
+lz
+z golang
+y
+v .wezterm.lua
+z node
+y
+git clone https://github.com/john-smilga/node-express-course.git
+y
+pnpm i
+y
+z
+v .wezterm.lua
+v
+z fpt
+y
+node --experimental-strip-types index.ts
+v
+y
+node --experimental-strip-types index.ts
+choco upgrade nodejs
+z fpt
+y
+node index.ts
+nvm
+cls
+node --experimental-strip-types index.ts
+choco upgrade nodejs
+node --experimental-strip-types index.ts
+choco upgrade nodejs.install
+node -v
+choco upgrade nodejs.install -y
+choco upgrade nodejs -y
+z scoop
+z
+y
+z
+v
+y
+z
+scoop search nodejs
+v
+y
+v
+y
+l1
+la
+y
+la
+z nushell
+y
+v
+z
+z .dot
+v .wezterm.lua
+z pic
+ii
+z fpt
+y
+lz
+choco list
+scoop list
+mongod
+cls
+y
+z
+z pic
+y
+ffplay taChiLaNguoiDung.mp4
+cls
+y
+z pic
+y
+ii
+v
+ii
+cls
+z
+v .wezterm.lua
+cls
+v
+pipx install posting
+scoop install pipx
+pipx install posting
+pipx list
+scoop uninstall pipx
+scoop install main/uv
+uv --help
+uv tool install --python 3.12 posting
+posting
+y
+./posting.exe
+posting
+z
+posting
+v .wezterm.lua
+choco upgrade nodejs -y
+z fpt
+y
+node index.ts
+v
+tsx index.ts
+v
+node index.ts
+choco list
+choco uninstall composer
+choco list
+choco uninstall php
+choco list
+choco uninstall helix
+choco list
+choco search posting
+psql
+v
+psql
+net start postgresql
+v .wezterm.lua
+exit
+v .wezterm.lua
+z node
+y
+bat rest.http
+pnpm start:dev
+v
+y
+cls
+posting
+cls
+posting
+y
+p
+posting
+v
+y
+z fpt
+z golang
+posting
+y
+z
+posting
+z fpt
+y
+tsc --init
+touch index.ts
+node index.ts
+node
+node index.ts
+tsx index.ts
+exit
+tsc
+y
+node index.ts
+tsx index.ts
+node index.ts
+tsx index.ts
+tsc
+lz
+v
+z fpt
+y
+pnpm i express-handlebars
+v
+z fpt
+v
+rm -rf C:\Users\corcl\AppData\Local\nvim-data\shada\main.shada.tmp.X
+v .wezterm.lua
+rm -rf C:\Users\corcl\AppData\Local\nvim-data\shada\main.shada.tmp.X
+v .wezterm.lua
+rm -rf C:\Users\corcl\AppData\Local\nvim-data\shada\
+v .wezterm.lua
+v
+z fpt
+y
+pnpm i
+v
+pnpm run dev
+cls
+posting
+z
+pnpm run dev
+v .wezterm.lua
+z fpt
+y
+pnpm run dev
+z
+v .wezterm.lua
+z .dot
+y
+v
+lz
+posting
+cls
+pnpm run dev
+v
+z
+v .wezterm.lua
+z fpt
+cd `WEB503 - NodeJs - Restful Web Service\`
+y
+pnpm run dev
+cls
+v
+y
+v
+npm list --global --depth=0
+ng update
+ng --help
+cls
+y\
+y
+ng version
+ng new frontend
+y
+bat package.json
+v
+npm run start
+z nushell
+ii
+z .dot
 ii
