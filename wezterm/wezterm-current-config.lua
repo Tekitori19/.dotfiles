@@ -133,6 +133,13 @@ config.keys = {
 	},
 	{ key = "9", mods = "CTRL", action = act.PaneSelect },
 	{
+		key = "0",
+		mods = "CTRL",
+		action = act.PaneSelect({
+			mode = "SwapWithActive",
+		}),
+	},
+	{
 		key = "O",
 		mods = "CTRL|ALT",
 		-- toggling opacity
