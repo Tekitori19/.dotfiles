@@ -85,7 +85,7 @@ config.keys = {
 
 	-- tmux like
 	{
-		key = "h",
+		key = "\\",
 		mods = "CTRL|ALT",
 		action = wezterm.action.SplitPane({
 			direction = "Right",
@@ -93,7 +93,7 @@ config.keys = {
 		}),
 	},
 	{
-		key = "v",
+		key = "-",
 		mods = "CTRL|ALT",
 		action = wezterm.action.SplitPane({
 			direction = "Down",
@@ -101,7 +101,7 @@ config.keys = {
 		}),
 	},
 	{
-		key = "x",
+		key = "Backspace",
 		mods = "CTRL|ALT",
 		action = act({ CloseCurrentPane = { confirm = true } }),
 	},
