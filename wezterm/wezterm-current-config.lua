@@ -171,13 +171,18 @@ config.window_background_image_hsb = {
 	brightness = 0.1,
 }
 
-local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
-bar.apply_to_config(config)
+-- local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+-- bar.apply_to_config(config)
 
 -- tabs
--- config.hide_tab_bar_if_only_one_tab = true
--- config.use_fancy_tab_bar = false
--- config.tab_bar_at_bottom = false
+config.hide_tab_bar_if_only_one_tab = false
+config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = true
+config.colors = {
+	tab_bar = {
+		background = "rgba(0, 0, 0, 0%)",
+	},
+}
 
 -- and finally, return the configuration to wezterm
 return config
