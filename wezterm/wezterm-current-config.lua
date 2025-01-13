@@ -160,7 +160,7 @@ config.keys = {
 config.color_scheme = "Popping and Locking"
 config.force_reverse_video_cursor = true
 
-config.window_decorations = "RESIZE" -- "INTEGRATED_BUTTONS|RESIZE"
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE" -- "RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
 
 -- load cái ảnh xong terminal lag vl khuyên là máy yếu không nên bật
