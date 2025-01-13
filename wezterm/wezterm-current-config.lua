@@ -181,6 +181,28 @@ config.tab_bar_at_bottom = true
 config.colors = {
 	tab_bar = {
 		background = "rgba(0, 0, 0, 0%)",
+		active_tab = {
+			bg_color = "rgba(0, 0, 0, 0%)",
+			fg_color = "#7FFF50",
+			intensity = "Normal",
+			underline = "None",
+			italic = false,
+			strikethrough = false,
+		},
+		inactive_tab = {
+			bg_color = "rgba(0, 0, 0, 0%)",
+			fg_color = "#f8f2f5",
+			intensity = "Normal",
+			underline = "None",
+			italic = false,
+			strikethrough = false,
+		},
+
+		new_tab = {
+			-- bg_color = "rgba(59, 34, 76, 50%)",
+			bg_color = "rgba(0, 0, 0, 0%)",
+			fg_color = "white",
+		},
 	},
 }
 
