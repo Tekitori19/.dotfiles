@@ -105,7 +105,6 @@ config.keys = {
 		mods = "CTRL|ALT",
 		action = act({ CloseCurrentPane = { confirm = true } }),
 	},
-	-- { key = "Tab", mods = "CTRL|SHIFT", action = act.CopyMode("MoveForwardWord") },
 
 	-- copy and paste
 	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
@@ -117,9 +116,6 @@ config.keys = {
 		action = act.PromptInputLine({
 			description = "Enter new name for tab",
 			action = wezterm.action_callback(function(window, pane, line)
-				-- line will be `nil` if they hit escape without entering anything
-				-- An empty string if they just hit enter
-				-- Or the actual line of text they wrote
 				if line then
 					window:active_tab():set_title(line)
 				end
@@ -171,6 +167,7 @@ config.window_background_image_hsb = {
 	brightness = 0.1,
 }
 
+-- tab bar đẹp vl người ta làm sẵn nhưng mà không thích dùng nữa tại không biết có mã độc hay không vì t lười đọc source thằng ní ni vãi
 -- local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 -- bar.apply_to_config(config)
 
@@ -197,9 +194,7 @@ config.colors = {
 			italic = false,
 			strikethrough = false,
 		},
-
 		new_tab = {
-			-- bg_color = "rgba(59, 34, 76, 50%)",
 			bg_color = "rgba(0, 0, 0, 0%)",
 			fg_color = "white",
 		},
