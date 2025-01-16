@@ -20,9 +20,10 @@ config.font_size = 14
 -- config.font_size = 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
-
 config.window_background_opacity = 0.8
+
 -- config.win32_system_backdrop = "Tabbed"
+-- config.window_background_opacity = 0
 -- config.window_background_gradient = {
 -- 	colors = { "#0f0c29", "#302b63", "#24243e" },
 -- 	-- colors = { "#004d4d", "#006666", "#008080" },
@@ -79,6 +80,22 @@ config.keys = {
 		mods = "CTRL|SHIFT",
 		action = act.SendKey({
 			key = "RightArrow",
+			mods = "CTRL|SHIFT",
+		}),
+	},
+	{
+		key = "UpArrow",
+		mods = "CTRL|SHIFT",
+		action = act.SendKey({
+			key = "UpArrow",
+			mods = "CTRL|SHIFT",
+		}),
+	},
+	{
+		key = "DownArrow",
+		mods = "CTRL|SHIFT",
+		action = act.SendKey({
+			key = "DownArrow",
 			mods = "CTRL|SHIFT",
 		}),
 	},
