@@ -58,6 +58,7 @@ end)
 config.keys = {
 	{ key = "`", mods = "CTRL", action = "ShowTabNavigator" },
 	{ key = "~", mods = "CTRL|SHIFT", action = "ShowLauncher" },
+
 	-- move
 	{ key = "h", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Left") },
 	{ key = "j", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Down") },
@@ -124,7 +125,11 @@ config.keys = {
 		mods = "CTRL|ALT",
 		action = act({ CloseCurrentPane = { confirm = true } }),
 	},
-
+	{
+		key = "Backspace",
+		mods = "CTRL|SHIFT|ALT",
+		action = act({ CloseCurrentTab = { confirm = true } }),
+	},
 	-- copy and paste
 	{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("PrimarySelection") },
 
@@ -196,8 +201,8 @@ config.colors = {
 		background = "rgba(0, 0, 0, 0%)",
 		active_tab = {
 			bg_color = "rgba(0, 0, 0, 0%)",
-			-- fg_color = "#7FFF50",
-			fg_color = "#3b224c",
+			fg_color = "#7FFF50",
+			-- fg_color = "#3b224c",
 			intensity = "Normal",
 			underline = "None",
 			italic = false,
