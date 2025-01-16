@@ -16,7 +16,7 @@ config.term = "xterm-256color" -- Set the terminal type
 config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
 config.cell_width = 0.95
 config.prefer_egl = true
-config.font_size = 14
+config.font_size = 12
 -- config.font_size = 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
@@ -56,6 +56,8 @@ end)
 
 -- keymaps
 config.keys = {
+	{ key = "`", mods = "CTRL", action = "ShowTabNavigator" },
+	{ key = "~", mods = "CTRL|SHIFT", action = "ShowLauncher" },
 	-- move
 	{ key = "h", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Left") },
 	{ key = "j", mods = "CTRL|SHIFT", action = act.ActivatePaneDirection("Down") },
@@ -159,7 +161,7 @@ config.keys = {
 		action = wezterm.action_callback(function(window, _)
 			local overrides = window:get_config_overrides() or {}
 			if overrides.window_background_opacity == 1.0 then
-				overrides.window_background_opacity = 0 --0.8
+				overrides.window_background_opacity = 0.8 --0.8
 			else
 				overrides.window_background_opacity = 1.0
 			end
@@ -170,7 +172,8 @@ config.keys = {
 
 -- For example, changing the color scheme:
 -- config.color_scheme = "Argonaut"
-config.color_scheme = "Popping and Locking"
+-- config.color_scheme = "Popping and Locking"
+config.color_scheme = "Cloud (terminal.sexy)"
 config.force_reverse_video_cursor = true
 
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE" -- "RESIZE"
@@ -184,10 +187,6 @@ config.window_background_image_hsb = {
 	brightness = 0.1,
 }
 
--- tab bar đẹp vl người ta làm sẵn nhưng mà không thích dùng nữa tại không biết có mã độc hay không vì t lười đọc source thằng ní ni vãi
--- local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
--- bar.apply_to_config(config)
-
 -- tabs
 config.hide_tab_bar_if_only_one_tab = false
 config.use_fancy_tab_bar = false
@@ -197,7 +196,8 @@ config.colors = {
 		background = "rgba(0, 0, 0, 0%)",
 		active_tab = {
 			bg_color = "rgba(0, 0, 0, 0%)",
-			fg_color = "#7FFF50",
+			-- fg_color = "#7FFF50",
+			fg_color = "#3b224c",
 			intensity = "Normal",
 			underline = "None",
 			italic = false,
