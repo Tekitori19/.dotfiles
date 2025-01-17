@@ -12,12 +12,26 @@ local config = wezterm.config_builder()
 config.front_end = "OpenGL"
 config.max_fps = 120
 config.term = "xterm-256color" -- Set the terminal type
+config.alternate_buffer_wheel_scroll_speed = 1
+config.mouse_bindings = {
+	{
+		event = { Down = { streak = 1, button = { WheelUp = 1 } } },
+		mods = "NONE",
+		action = act.ScrollByLine(-1),
+	},
+	{
+		event = { Down = { streak = 1, button = { WheelDown = 1 } } },
+		mods = "NONE",
+		action = act.ScrollByLine(1),
+	},
+}
 
-config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
+-- config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
+config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
 config.cell_width = 0.95
 config.prefer_egl = true
-config.font_size = 12
--- config.font_size = 16
+-- config.font_size = 14
+config.font_size = 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
 config.window_background_opacity = 0.8
@@ -175,19 +189,14 @@ config.keys = {
 	},
 }
 
--- For example, changing the color scheme:
--- config.color_scheme = "Argonaut"
--- config.color_scheme = "Popping and Locking"
-config.color_scheme = "Cloud (terminal.sexy)"
+config.color_scheme = "Popping and Locking" -- "Cloud (terminal.sexy)" "Argonaut"
 config.force_reverse_video_cursor = true
 
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE" -- "RESIZE"
+config.window_decorations = "RESIZE" -- "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
 
 -- load cái ảnh xong terminal lag vl khuyên là máy yếu không nên bật
--- config.window_background_image = "C:\\Users\\corcl\\Pictures\\chill.png"
 -- config.window_background_image = "C:\\Users\\corcl\\Pictures\\guts.png"
-
 config.window_background_image_hsb = {
 	brightness = 0.1,
 }
@@ -201,8 +210,9 @@ config.colors = {
 		background = "rgba(0, 0, 0, 0%)",
 		active_tab = {
 			bg_color = "rgba(0, 0, 0, 0%)",
-			fg_color = "#7FFF50",
-			-- fg_color = "#3b224c",
+			-- fg_color = "#cfff93",
+			-- fg_color = "#957fb8",
+			fg_color = "#66cbf1",
 			intensity = "Normal",
 			underline = "None",
 			italic = false,
@@ -223,5 +233,52 @@ config.colors = {
 	},
 }
 
--- and finally, return the configuration to wezterm
+function get_max_cols(window)
+	local tab = window:active_tab()
+	local cols = tab:get_size().cols
+	return cols
+end
+
+wezterm.on("window-config-reloaded", function(window)
+	wezterm.GLOBAL.cols = get_max_cols(window)
+end)
+
+wezterm.on("window-resized", function(window, pane)
+	wezterm.GLOBAL.cols = get_max_cols(window)
+end)
+
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+	local title = tab.active_pane.title
+	local full_title = "[" .. tab.tab_index + 1 .. "] " .. title
+	local pad_length = (wezterm.GLOBAL.cols // #tabs - #full_title) // 2
+	if pad_length * 2 + #full_title > max_width then
+		pad_length = (max_width - #full_title) // 2
+	end
+	return string.rep(" ", pad_length) .. full_title .. string.rep(" ", pad_length)
+end)
+
+wezterm.on("update-status", function(window)
+	-- Grab the utf8 character for the "powerline" left facing
+	-- solid arrow.
+	local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
+
+	-- Grab the current window's configuration, and from it the
+	-- palette (this is the combination of your chosen colour scheme
+	-- including any overrides).
+	local color_scheme = window:effective_config().resolved_palette
+	local bg = color_scheme.background
+	local fg = color_scheme.foreground
+
+	window:set_right_status(wezterm.format({
+		-- First, we draw the arrow...
+		{ Background = { Color = "none" } },
+		{ Foreground = { Color = bg } },
+		{ Text = SOLID_LEFT_ARROW },
+		-- Then we draw our text
+		{ Background = { Color = bg } },
+		{ Foreground = { Color = fg } },
+		{ Text = " " .. wezterm.hostname() .. " " },
+	}))
+end)
+
 return config
