@@ -1,8 +1,6 @@
--- Pull in the wezterm API
 local wezterm = require("wezterm")
 local act = wezterm.action
 local mux = wezterm.mux
--- This will hold the configuration.
 local config = wezterm.config_builder()
 
 -- local gpus = wezterm.gui.enumerate_gpus()
@@ -27,11 +25,12 @@ config.mouse_bindings = {
 }
 
 -- config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
-config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
+config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
+-- config.font = wezterm.font("Hack Nerd Font Mono", { weight = "Medium" })
 config.cell_width = 0.95
 config.prefer_egl = true
--- config.font_size = 14
-config.font_size = 16
+config.font_size = 14
+-- config.font_size = 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
 config.window_background_opacity = 0.8
@@ -197,9 +196,9 @@ config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu
 
 -- load cái ảnh xong terminal lag vl khuyên là máy yếu không nên bật
 -- config.window_background_image = "C:\\Users\\corcl\\Pictures\\guts.png"
-config.window_background_image_hsb = {
-	brightness = 0.1,
-}
+-- config.window_background_image_hsb = {
+-- 	brightness = 0.1,
+-- }
 
 -- tabs
 config.hide_tab_bar_if_only_one_tab = false
@@ -258,26 +257,25 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 end)
 
 wezterm.on("update-status", function(window)
-	-- Grab the utf8 character for the "powerline" left facing
-	-- solid arrow.
 	local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
-
-	-- Grab the current window's configuration, and from it the
-	-- palette (this is the combination of your chosen colour scheme
-	-- including any overrides).
 	local color_scheme = window:effective_config().resolved_palette
 	local bg = color_scheme.background
 	local fg = color_scheme.foreground
 
 	window:set_right_status(wezterm.format({
-		-- First, we draw the arrow...
 		{ Background = { Color = "none" } },
 		{ Foreground = { Color = bg } },
 		{ Text = SOLID_LEFT_ARROW },
-		-- Then we draw our text
+
 		{ Background = { Color = bg } },
 		{ Foreground = { Color = fg } },
 		{ Text = " " .. wezterm.hostname() .. " " },
+		{ Text = "|" },
+		-- { Text = os.getenv("USERNAME") .. " " },
+		-- { Text = " | " },
+		-- { Text = wezterm.home_dir .. " " },
+		-- { Text = " | " },
+		{ Text = os.date(" %d-%m-%Y %H:%M:%S") },
 	}))
 end)
 
