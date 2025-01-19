@@ -270,11 +270,11 @@ wezterm.on("update-status", function(window)
 		{ Text = "|" },
 		-- { Text = os.getenv("USERNAME") .. " " },
 		{
-			Text = " 🎲▶️⏸️⏯️🔁🔀🧑‍💻",
+			Text = " 🎲🎮⏮️⏸️⏯️🎸🧑‍💻",
 		},
 		-- { Text = wezterm.home_dir .. " " },
-		-- { Text = " | " },
-		{ Text = os.date(" %d-%m-%Y %H:%M:%S") },
+		{ Text = " | " },
+		{ Text = os.date("%d-%m-%Y %H:%M:%S") },
 	}))
 end)
 
