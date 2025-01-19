@@ -24,19 +24,16 @@ config.mouse_bindings = {
 	},
 }
 
--- config.font = wezterm.font("Monaspace Radon", { weight = "Medium" })
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
--- config.font = wezterm.font("Hack Nerd Font Mono", { weight = "Medium" })
+config.font = wezterm.font("JetBrains Mono", { weight = "Bold" }) -- "Hack Nerd Font Mono" "Monaspace Radon"
 config.cell_width = 0.95
 config.prefer_egl = true
-config.font_size = 14
--- config.font_size = 16
+config.font_size = 14 -- 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
-config.window_background_opacity = 0.8
+-- config.window_background_opacity = 0.8
 
--- config.win32_system_backdrop = "Tabbed"
--- config.window_background_opacity = 0
+config.win32_system_backdrop = "Tabbed"
+config.window_background_opacity = 0
 -- config.window_background_gradient = {
 -- 	colors = { "#0f0c29", "#302b63", "#24243e" },
 -- 	-- colors = { "#004d4d", "#006666", "#008080" },
@@ -44,10 +41,10 @@ config.window_background_opacity = 0.8
 -- }
 
 config.window_padding = {
-	left = 0,
-	right = 0,
-	top = 0,
-	bottom = 0,
+	left = 5,
+	right = 5,
+	top = 5,
+	bottom = 5,
 }
 
 config.inactive_pane_hsb = {
@@ -272,7 +269,9 @@ wezterm.on("update-status", function(window)
 		{ Text = " " .. wezterm.hostname() .. " " },
 		{ Text = "|" },
 		-- { Text = os.getenv("USERNAME") .. " " },
-		-- { Text = " | " },
+		{
+			Text = " 🎲▶️⏸️⏯️🔁🔀🧑‍💻",
+		},
 		-- { Text = wezterm.home_dir .. " " },
 		-- { Text = " | " },
 		{ Text = os.date(" %d-%m-%Y %H:%M:%S") },
