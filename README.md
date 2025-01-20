@@ -11,3 +11,4 @@ choco install 7zip lazygit neovim wezterm yazi ripgrep nerd-fonts-Hack curl fd f
 ```
 scoop install fzf bat chafa make mongodb neovide poppler python starship uv zoxide
 ```
+cài [posting](https://posting.sh/) (hiện tại t đang cài bằng "uv")
