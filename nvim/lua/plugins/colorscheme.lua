@@ -64,6 +64,13 @@ return {
     },
   },
   {
+    "dgox16/oldworld.nvim",
+    priority = 1000,
+    opts = {
+      variant = "oled",
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "kanagawa",

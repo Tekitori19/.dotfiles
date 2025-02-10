@@ -19,10 +19,19 @@ map("t", "<Leader><ESC>", "<C-\\><C-n>", { noremap = true })
 map("x", "<leader>P", [["_dP]])
 
 -- Xóa dòng nhưng không thay đổi register
-map("n", "<A-x>", [["_x"]])
+map("v", "c", [["_c]])
+map("n", "c", [["_c]])
+map("n", "x", [["_x]])
 map("n", "<S-X>", [["_dd]])
-map("v", "<A-x>", [["_x"]])
--- map("v", "<C-X>", [["_dd]])
+map("v", "x", [["_x]])
+
+-- git keymaps
+map("n", "<leader>gl", function()
+  require("snacks").lazygit.log()
+end, { desc = "Lazygit Logs" })
+map("n", "<leader>gbr", function()
+  require("snacks").picker.git_branches({ layout = "select" })
+end, { desc = "Pick and Switch Git Branches" })
 
 -- Duplicate a line and comment out the first line
 map("n", "yc", "yygccp", { noremap = true })
