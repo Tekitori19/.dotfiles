@@ -30,15 +30,15 @@ config.prefer_egl = true
 config.font_size = 15 -- 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.95
 
 -- config.win32_system_backdrop = "Tabbed" -- "Acrylic"
 -- config.window_background_opacity = 0
--- config.window_background_gradient = {
--- 	colors = { "#0f0c29", "#302b63", "#24243e" },
--- 	-- colors = { "#004d4d", "#006666", "#008080" },
--- 	orientation = { Linear = { angle = -45.0 } },
--- }
+config.window_background_gradient = {
+	colors = { "#000000", "#0f3443", "#403B4A" },
+	-- colors = { "#000000", "#292E49", "#403B4A", "#536976", "#BBD2C5" },
+	orientation = { Linear = { angle = 80.0 } },
+}
 
 config.window_padding = {
 	left = 4,
