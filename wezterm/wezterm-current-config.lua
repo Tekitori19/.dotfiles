@@ -1,4 +1,3 @@
-local wezterm = require("wezterm")
 local act = wezterm.action
 local mux = wezterm.mux
 local config = wezterm.config_builder()
@@ -27,7 +26,7 @@ config.mouse_bindings = {
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold" }) -- "Hack Nerd Font Mono" "Monaspace Radon"
 config.cell_width = 0.95
 config.prefer_egl = true
-config.font_size = 15 -- 16
+config.font_size = 12 -- 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
 config.window_background_opacity = 0.95
@@ -35,7 +34,7 @@ config.window_background_opacity = 0.95
 -- config.win32_system_backdrop = "Tabbed" -- "Acrylic"
 -- config.window_background_opacity = 0
 config.window_background_gradient = {
-	colors = { "#000000", "#0f3443", "#403B4A" },
+	colors = { "#000000", "#333333", "#0f3443", "#444444", "#403B4A", "#222222" },
 	-- colors = { "#000000", "#292E49", "#403B4A", "#536976", "#BBD2C5" },
 	orientation = { Linear = { angle = 80.0 } },
 }
