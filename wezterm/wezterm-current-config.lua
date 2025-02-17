@@ -5,9 +5,10 @@ local config = wezterm.config_builder()
 
 -- local gpus = wezterm.gui.enumerate_gpus()
 -- config.webgpu_preferred_adapter = gpus[1]
--- config.front_end = "WebGpu"
+config.front_end = "WebGpu"
+config.webgpu_power_preference = "HighPerformance"
 
-config.front_end = "OpenGL"
+-- config.front_end = "OpenGL"
 config.max_fps = 120
 config.term = "xterm-256color" -- Set the terminal type
 config.alternate_buffer_wheel_scroll_speed = 1
@@ -30,20 +31,22 @@ config.prefer_egl = true
 config.font_size = 12 -- 16
 config.initial_cols = 120 -- Set the initial width to 120 columns
 config.initial_rows = 30 -- Set the initial height to 30 rows
-config.window_background_opacity = 0.95
+config.tab_max_width = 32
+-- config.window_background_opacity = 0.95
 
 -- config.win32_system_backdrop = "Tabbed" -- "Acrylic"
--- config.window_background_opacity = 0
+-- config.win32_system_backdrop = "Acrylic"
+config.window_background_opacity = 0.8
 config.window_background_gradient = {
-	colors = { "#000000", "#333333", "#0f3443", "#444444", "#403B4A", "#222222" },
+	colors = { "#222222", "#0f3443", "#3b4758", "#555555" },
 	-- colors = { "#000000", "#292E49", "#403B4A", "#536976", "#BBD2C5" },
-	orientation = { Linear = { angle = 80.0 } },
+	orientation = { Linear = { angle = 45.0 } },
 }
 
 config.window_padding = {
-	left = 4,
+	left = 2,
 	right = 0,
-	top = 7,
+	top = 0,
 	bottom = 0,
 }
 
@@ -51,6 +54,14 @@ config.inactive_pane_hsb = {
 	saturation = 1.2,
 	brightness = 0.25,
 }
+
+-- Hyperlink
+config.hyperlink_rules = wezterm.default_hyperlink_rules()
+-- e-mail fulano-ciclano@example.com fulano_ciclano@example.com
+table.insert(config.hyperlink_rules, {
+	regex = "\\b[A-Z-a-z0-9-_\\.]+@[\\w-]+(\\.[\\w-]+)+\\b",
+	format = "mailto:$0",
+})
 
 -- color scheme toggling
 ---@diagnostic disable-next-line: unused-local
@@ -206,9 +217,7 @@ config.colors = {
 		background = "rgba(0, 0, 0, 0%)",
 		active_tab = {
 			bg_color = "rgba(0, 0, 0, 0%)",
-			-- fg_color = "#cfff93",
-			-- fg_color = "#957fb8",
-			fg_color = "#66cbf1",
+			fg_color = "#282C34",
 			intensity = "Normal",
 			underline = "None",
 			italic = false,
@@ -229,40 +238,19 @@ config.colors = {
 	},
 }
 
-function get_max_cols(window)
-	local tab = window:active_tab()
-	local cols = tab:get_size().cols
-	return cols
-end
-
-wezterm.on("window-config-reloaded", function(window)
-	wezterm.GLOBAL.cols = get_max_cols(window)
-end)
-
-wezterm.on("window-resized", function(window, pane)
-	wezterm.GLOBAL.cols = get_max_cols(window)
-end)
-
--- wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
--- 	local title = tab.active_pane.title
--- 	local full_title = "[" .. tab.tab_index + 1 .. "] " .. title
--- 	local pad_length = (wezterm.GLOBAL.cols // #tabs - #full_title) // 2
--- 	if pad_length * 2 + #full_title > max_width then
--- 		pad_length = (max_width - #full_title) // 2
--- 	end
--- 	return string.rep(" ", pad_length) .. full_title .. string.rep(" ", pad_length)
--- end)
-
 wezterm.on("update-status", function(window)
 	local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
 	local color_scheme = window:effective_config().resolved_palette
-	local bg = color_scheme.background
-	local fg = color_scheme.foreground
+	-- local bg = color_scheme.background
+	-- local fg = color_scheme.foreground
+	local bg = "#E5C07B"
+	local fg = "#282C34"
 
 	window:set_right_status(wezterm.format({
 		{ Background = { Color = "none" } },
 		{ Foreground = { Color = bg } },
 		{ Text = SOLID_LEFT_ARROW },
+		-- { Text = "" },
 
 		{ Background = { Color = bg } },
 		{ Foreground = { Color = fg } },
@@ -276,6 +264,50 @@ wezterm.on("update-status", function(window)
 		{ Text = " | " },
 		{ Text = os.date("%d-%m-%Y %H:%M:%S") },
 	}))
+end)
+
+local function tab_title(tab_info)
+	local title = tab_info.tab_title
+	-- if the tab title is explicitly set, take that
+	if title and #title > 0 then
+		return title
+	end
+	-- Otherwise, use the title from the active pane
+	-- in that tab
+	return tab_info.active_pane.title
+end
+
+wezterm.on("format-tab-title", function(tab, tabs, panes, conf, hover, max_width)
+	local background = "#65737E"
+	local foreground = "#F0F2F5"
+	local edge_background = "rgba(0, 0, 0, 0%)"
+
+	if tab.is_active or hover then
+		background = "#E5C07B"
+		foreground = "#282C34"
+	end
+	local edge_foreground = background
+
+	local title = tab_title(tab)
+
+	-- ensure that the titles fit in the available space,
+	-- and that we have room for the edges.
+	local max = config.tab_max_width - 25
+	if #title > max then
+		title = wezterm.truncate_right(title, max) .. "…"
+	end
+	return {
+		{ Background = { Color = edge_background } },
+		{ Foreground = { Color = edge_foreground } },
+		{ Text = "" },
+		{ Background = { Color = background } },
+		{ Foreground = { Color = foreground } },
+		{ Attribute = { Intensity = tab.is_active and "Bold" or "Normal" } },
+		{ Text = " " .. (tab.tab_index + 1) .. ": " .. title .. " " },
+		{ Background = { Color = edge_background } },
+		{ Foreground = { Color = edge_foreground } },
+		{ Text = " " },
+	}
 end)
 
 return config
