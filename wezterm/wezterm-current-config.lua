@@ -3,8 +3,8 @@ local act = wezterm.action
 local mux = wezterm.mux
 local config = wezterm.config_builder()
 
--- local gpus = wezterm.gui.enumerate_gpus()
--- config.webgpu_preferred_adapter = gpus[1]
+local gpus = wezterm.gui.enumerate_gpus()
+config.webgpu_preferred_adapter = gpus[1]
 config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
 
@@ -35,8 +35,7 @@ config.tab_max_width = 32
 -- config.window_background_opacity = 0.95
 
 -- config.win32_system_backdrop = "Tabbed" -- "Acrylic"
--- config.win32_system_backdrop = "Acrylic"
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 config.window_background_gradient = {
 	colors = { "#222222", "#0f3443", "#3b4758", "#555555" },
 	-- colors = { "#000000", "#292E49", "#403B4A", "#536976", "#BBD2C5" },
@@ -197,7 +196,34 @@ config.keys = {
 }
 
 config.color_scheme = "Popping and Locking" -- "Cloud (terminal.sexy)" "Argonaut"
+-- Cursor
 config.force_reverse_video_cursor = true
+config.bypass_mouse_reporting_modifiers = "SHIFT"
+config.cursor_blink_ease_in = "Linear"
+config.cursor_blink_rate = 500
+config.default_cursor_style = "BlinkingBlock"
+config.hide_mouse_cursor_when_typing = false
+
+config.mouse_bindings = {
+	{ event = { Down = { streak = 1, button = "Middle" } }, mods = "NONE", action = act.PasteFrom("Clipboard") },
+	{
+		event = { Down = { streak = 1, button = "Left" } },
+		mods = "NONE",
+		action = act.Multiple({ act.ClearSelection }),
+	},
+	{ event = { Up = { streak = 1, button = "Left" } }, mods = "NONE", action = act.Nop },
+	{
+		event = { Up = { streak = 2, button = "Left" } },
+		mods = "NONE",
+		action = act.Multiple({ act.CopyTo("ClipboardAndPrimarySelection"), act.ClearSelection }),
+	},
+	{
+		event = { Up = { streak = 3, button = "Left" } },
+		mods = "NONE",
+		action = act.Multiple({ act.CopyTo("ClipboardAndPrimarySelection"), act.ClearSelection }),
+	},
+	{ event = { Up = { streak = 1, button = "Left" } }, mods = "CTRL", action = act.OpenLinkAtMouseCursor },
+}
 
 config.window_decorations = "RESIZE" -- "INTEGRATED_BUTTONS|RESIZE"
 config.default_prog = { "C:\\Users\\corcl\\AppData\\Local\\Programs\\nu\\bin\\nu.exe" }
